@@ -1,0 +1,17 @@
+:root {
+  --background-color: black;
+  --text-color: white;
+  --markup-color: white;
+  --font: Manrope;
+  --font-size-base: 10px;
+  --font-size: 1.5rem;
+  --font-weight-light: 200;
+  --font-weight-thin: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --space-standard: 2rem;
+  --stroke-width: thin;
+}
+
+@media screen and (max-width: 768px) {
+}

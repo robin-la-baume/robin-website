@@ -1,6 +1,7 @@
 ---
 ---
 
+@import "variables";
 @import "audio";
 @import "contact";
 @import "foto";
@@ -10,14 +11,6 @@
 @import "vita";
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-
-$background-color: black;
-$text-color: white;
-$markup-color: white;
-$font: Manrope;
-$font-size: 10px;
-$font-weight-light: 200;
-$font-weight-regular: 400;
 
 @-webkit-keyframes fade {
   from {
@@ -42,13 +35,13 @@ $font-weight-regular: 400;
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: $background-color;
-  background: $text-color;
+  color: var(--background-color);
+  background: var(--text-color);
 }
 
 ::selection {
-  color: $background-color;
-  background: $text-color;
+  color: var(--background-color);
+  background: var(--text-color);
 }
 
 body, html {
@@ -59,32 +52,25 @@ body, html {
 }
 
 body {
-  background-color: black;
-  font-family: $font, Arial, Helvetica, sans-serif !important;
-  color: $text-color;
-  font-weight: $font-weight-light;
-  font-size: $font-size;
+  // background-color: var(--background-color;
+  background-color: var(--background-color);
+  font-family: var(--font), Arial, Helvetica, sans-serif !important;
+  color: var(--text-color);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-base);
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2 {
   font-size: 4vw;
-  font-weight: $font-weight-regular;
+  font-weight: var(--font-weight-regular);
   text-transform: uppercase;
   line-height: 1;
 }
 
-/* h2 {
-  font-size: 2.25vw;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 1;
-  margin: 0;
-} */
-
 h3 {
   font-size: 1.5rem;
-  font-weight: $font-weight-regular;
+  font-weight: var(--font-weight-regular);
   text-transform: uppercase;
   line-height: 1;
 }
@@ -95,9 +81,10 @@ a {
 }
 
 button {
-  font-family: $font, Arial, Helvetica, sans-serif !important;
+  font-family: var(--font), Arial, Helvetica, sans-serif !important;
   letter-spacing: 0.075rem;
-  font-weight: 500 !important;
+  font-weight: var(--font-weight-medium) !important;
+  font-size: var(--font-size) !important;
 }
 
 .content-container {
@@ -114,7 +101,7 @@ button {
 #mobile-sidebar {
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: var(--background-color);
   width: 100vw;
   height: 100vh;
   padding: 0 0 0 1.5rem;
@@ -124,8 +111,8 @@ button {
 
 #sidebar {
   grid-area: nav;
-  border-right: thin solid white;
-  padding-left: 2rem;
+  border-right: thin solid var(--markup-color);
+  padding-left: var(--space-standard);
   letter-spacing: 0.05rem;
 }
 
@@ -144,7 +131,7 @@ button {
 
 #sidebar ul li.menu-underline{
   height: 1px;
-  background-color: white;
+  background-color: var(--markup-color);
   width: 130%;
   margin-left: -2rem;
   position: absolute;
@@ -154,7 +141,7 @@ button {
 
 #mobile-sidebar ul li.moobile-menu-underline{
   height: 1px;
-  background-color: white;
+  background-color: var(--markup-color);
   width: 105%;
   margin-left: -2rem;
   position: absolute;
@@ -168,7 +155,7 @@ button {
 .headline-wrapper {
   padding-left: 2vw;
   grid-area: headline;
-  border-bottom: thin solid $markup-color;
+  border-bottom: thin solid var(--markup-color);
   display: flex;
   align-items: center;
 }
@@ -183,98 +170,22 @@ button {
 }
 
 footer {
-  border-top: thin solid $markup-color;
+  border-top: thin solid var(--markup-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 6rem;
-  background-color: $background-color;
+  background-color: var(--background-color);
 }
 
 footer h3 {
   margin: 0;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: var(--space-standard);
+  padding-right: var(--space-standard);
   
 }
 
 @media screen and (max-width: 768px) {
-  h1, h2 {
-    font-size: 8vw;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1;
-  }
 
-  h3 {
-    font-size: 1.5rem;
-    letter-spacing: 0.025rem;
-  }
-
-  .content-container {
-    display: grid;
-    width: 100vw;
-    min-height: 100vh;
-    grid-template-columns:1fr;
-    grid-template-rows: 23vw;
-    grid-template-areas:
-      "headline"
-      "content";
-  }
-
-  .headline-wrapper {
-    margin-top: 8vw;
-    padding: 0 2rem 8vw 2rem;
-    height: 15vw;
-  }
-
-  #sidebar {
-    display: none;
-  }
-
-  div.burger-wrapper {
-    /* background-color: white; */
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    z-index: 999;
-  }
   
-  div.burger-line-wrapper {
-    margin: 0 auto;
-    
-  }
-  
-  div.burger-line {
-    width: 30px;
-    height: 1px;
-    background-color: white;
-  }
-  
-  div.burger-middle-line {
-    margin: 10px 0;
-    transition: opacity 0.5s;
-  }
-
-  #mobile-sidebar {
-    display: block;
-    position: fixed;
-    overflow: hidden;
-  }
-
-  footer {
-    height: 3rem;
-    z-index: 999;
-  }
-
-  footer h3 {
-    font-size: .75rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 }
