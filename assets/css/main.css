@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: 'Manrope', Arial, Helvetica, sans-serif !important;
+  color: white;
+  font-weight: 200;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 {
+  font-size: 4vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* h2 {
+  font-size: 2.25vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+} */
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: 'Manrope', Arial, Helvetica, sans-serif !important;
+  letter-spacing: 0.075rem;
+  font-weight: 500 !important;
+}
+
+.content-container {
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  grid-template-columns: 190px 1fr;
+  grid-template-rows: 8vw 1fr;
+  grid-template-areas:
+    "nav headline"
+    "nav content";
+}
+
+#mobile-sidebar {
+  display: none;
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 0 0 1.5rem;
+  z-index: 998;
+
+}
+
+#sidebar {
+  grid-area: nav;
+  border-right: thin solid white;
+  padding-left: 2rem;
+  letter-spacing: 0.05rem;
+}
+
+#sidebar ul {
+  position: fixed;
+}
+
+#sidebar ul li.menu-button h3 {
+  margin-bottom: .5rem;
+  transition: letter-spacing .2s;
+}
+
+#sidebar ul li.menu-button h3:hover {
+  letter-spacing: 0.1rem;
+}
+
+#sidebar ul li.menu-underline{
+  height: 1px;
+  background-color: white;
+  width: 130%;
+  margin-left: -2rem;
+  position: absolute;
+  left: -130%;
+  transition: .2s;
+}
+
+#mobile-sidebar ul li.moobile-menu-underline{
+  height: 1px;
+  background-color: white;
+  width: 105%;
+  margin-left: -2rem;
+  position: absolute;
+  transition: .2s;
+}
+
+#mobile-sidebar h3 {
+  margin-bottom: .75rem;
+}
+
+.headline-wrapper {
+  padding-left: 2vw;
+  grid-area: headline;
+  border-bottom: thin solid white;
+  display: flex;
+  align-items: center;
+}
+
+.headline-wrapper h1 {
+  line-height: 0.8;
+  /* margin: 0 0 4px 0; */
+}
+
+.transition {
+  transition: transform 0.5s;
+}
+
+footer {
+  border-top: thin solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  background-color: black;
+}
+
+footer h3 {
+  margin: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+}
+
+@media screen and (max-width: 768px) {
+  h1, h2 {
+    font-size: 8vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.025rem;
+  }
+
+  .content-container {
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-columns:1fr;
+    grid-template-rows: 23vw;
+    grid-template-areas:
+      "headline"
+      "content";
+  }
+
+  .headline-wrapper {
+    margin-top: 8vw;
+    padding: 0 2rem 8vw 2rem;
+    height: 15vw;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  div.burger-wrapper {
+    /* background-color: white; */
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  div.burger-line-wrapper {
+    margin: 0 auto;
+    
+  }
+  
+  div.burger-line {
+    width: 30px;
+    height: 1px;
+    background-color: white;
+  }
+  
+  div.burger-middle-line {
+    margin: 10px 0;
+    transition: opacity 0.5s;
+  }
+
+  #mobile-sidebar {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+  }
+
+  footer {
+    height: 3rem;
+    z-index: 999;
+  }
+
+  footer h3 {
+    font-size: .75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

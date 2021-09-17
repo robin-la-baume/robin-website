@@ -1,0 +1,192 @@
+.start-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/uploads/IMG_1799-1920w.jpeg") no-repeat center top
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-template-columns: 190px 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "nav title social"
+    "nav content-1 content-2"
+    "nav content-1 content-2";
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#title {
+  grid-area: title;
+}
+
+#title h1 {
+  margin: 0.6rem 0 0 1.8rem;
+}
+
+#title h1 #forename {
+  margin-left: 1em;
+}
+#title h1 #middlename {
+  margin-left: 3em;
+}
+
+#social {
+  grid-area: social;
+  display: flex;
+  padding-top: 2em;
+  margin: 0 0 0 auto;
+}
+
+#social #instagram,
+#social #theapolis {
+  width: 6vw;
+  height: 6vw;
+  border: thin solid white;
+  border-radius: 50%;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+
+#social #instagram h2,
+#social #theapolis h2 {
+  margin: 0 auto;
+}
+
+#social #instagram:hover h2,
+#social #theapolis:hover h2 {
+  background: url("/images/uploads/IMG_1799-1920w.jpeg") no-repeat center top;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: block;
+  background-color: white;
+}
+
+#social #instagram:hover,
+#social #theapolis:hover {
+  background-color: white;
+}
+
+#content-1 {
+  grid-area: content-1;
+}
+
+#content-1 h2 {
+  margin-top: 0.6rem;
+  margin-right: 6rem;
+  line-height: 1.05;
+  float: right;
+}
+
+#content-2 {
+  grid-area: content-2;
+  border-top: thin solid white;
+}
+
+#content-2 h2 {
+  margin-top: 0.6rem;
+}
+
+#content-2 h2 span {
+  display: none;
+}
+
+#content-2 h3 a {
+  padding-bottom: 1rem;
+  transition: all 0.2s;
+  margin: 0;
+  letter-spacing: 0.05rem;
+}
+
+#content-2 h3 a:hover {
+  /* border-bottom: thin solid white; */
+  letter-spacing: 0.1rem;
+}
+
+#content-2 .underline {
+  display: none;
+  background-color: white;
+  width: 100%;
+  height: 0.05rem;
+  margin-left: 100%;
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 425px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .start-container {
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-areas:
+      "title title"
+      "social social"
+      "content-1 content-1"
+      "content-2 content-2";
+  }
+
+  #title {
+    margin: .5rem 0 15vh .5rem;
+    
+  }
+
+  #social #instagram,
+  #social #theapolis {
+    width: 12vw;
+    height: 12vw;
+    margin-right: 1rem;
+  }
+
+
+  #title h1 {
+    margin: 0.6rem 0 0 0.6rem;
+  }
+
+  #content-1 h2 {
+    margin-top: 0.6rem;
+    margin-left: 1rem;
+    line-height: 1.05;
+    float: none;
+    text-align: right;
+    display: none;
+  }
+
+  #content-2 {
+    border-top: none;
+  }
+
+  #content-2 h2 {
+    margin-left: 1rem;
+  }
+
+  #content-2 h2 span {
+    display: block;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: thin solid white;
+  }
+
+  #content-2 h3 a {
+    margin-left: 1rem;
+    transition: all 0.2s;
+    letter-spacing: 0.05rem;
+  }
+}
+
+@media screen and (orientation : landscape) and (max-width: 768px){
+  #content-2 {
+    display: none;
+  }
+}

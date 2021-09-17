@@ -1,0 +1,22 @@
+---
+layout: default
+title: Showreel
+---
+
+<div class="content-container" id="full-video">
+  <video class="background-video" autoplay muted loop id="myVideo">
+    <source src="https://dl.dropboxusercontent.com/s/u3z9uhbnbjlpxbb/158787-149894-l.mp4?dl=0" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  {% include headline.html %}
+  {% include navigation.html %}
+
+  <div id="showreel-wrapper">
+    <div id="showreel-content">
+      <button class="showreel-controls" id="pause-btn" onclick="pauseVideo()">Pause</button>
+      <button class="showreel-controls" id="mute-btn" onclick="muteVideo()">Sound on</button>
+    </div>
+
+  </div>
+</div>

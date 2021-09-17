@@ -1,0 +1,293 @@
+---
+layout: default
+title: Audio
+---
+
+<template>
+  <style>
+    #audio-wrapper {
+      grid-area: audios;
+      padding: 2rem 2rem 0 2rem;
+      width: calc(100% - 4rem);
+    }
+
+    button {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      outline: none;
+      width: 40px;
+      height: 40px;
+    }
+
+    #audio-player-container {
+      --seek-before-width: 0%;
+      --volume-before-width: 100%;
+      --buffered-width: 0%;
+      position: relative;
+      margin: 0 0 4rem 0;
+      width: 100%;
+      height: 100px;
+      border: thin solid white;
+      display: grid;
+      grid-template-columns: 100px 75px 1fr 100px;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "play-btn current-time range-time duration"
+        "play-btn volume-output volume-slider mute-icon";
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    #play-icon {
+      grid-area: play-btn;
+      margin: 0 auto;
+      transform: scale(2);
+    }
+
+    path {
+      stroke: white;
+    }
+
+    .time {
+      display: inline-block;
+      text-align: center;
+      font-size: 20px;
+      margin: 0 auto;
+      font-weight: 300;
+    }
+
+    #current-time {
+      grid-area: current-time;
+    }
+
+    #duration {
+      grid-area: duration;
+    }
+
+    output {
+      display: inline-block;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 300;
+      margin: 0 auto;
+    }
+
+    #volume-output {
+      grid-area: volume-output;
+    }
+
+    #volume-slider {
+      grid-area: volume-slider;
+    }
+
+    #volume-slider::-webkit-slider-runnable-track {
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    #volume-slider::-moz-range-track {
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    #volume-slider::-ms-fill-upper {
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    #volume-slider::before {
+      width: var(--volume-before-width);
+    }
+
+    #mute-icon {
+      grid-area: mute-icon;
+      margin: 0 auto 0 40px;
+    }
+
+    input[type="range"] {
+      grid-area: range-time;
+      position: relative;
+      -webkit-appearance: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      height: 19px;
+      outline: none;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 3px;
+      cursor: pointer;
+      background: linear-gradient(to right,
+          rgba(255, 255, 255, 0.6) var(--buffered-width),
+          rgba(255, 255, 255, 0.3) var(--buffered-width));
+    }
+
+    input[type="range"]::before {
+      position: absolute;
+      content: "";
+      top: 8px;
+      left: 0;
+      width: var(--seek-before-width);
+      height: 3px;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      position: relative;
+      -webkit-appearance: none;
+      box-sizing: content-box;
+      border: thin solid white;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: black;
+      cursor: pointer;
+      margin: -7px 0 0 0;
+    }
+
+    input[type="range"]:active::-webkit-slider-thumb {
+      transform: scale(1.2);
+      background: white;
+    }
+
+    input[type="range"]::-moz-range-track {
+      width: 100%;
+      height: 1px;
+      cursor: pointer;
+      background: linear-gradient(to right,
+          rgba(255, 255, 255, 0.6) var(--buffered-width),
+          rgba(255, 255, 255, 0.3) var(--buffered-width));
+    }
+
+    input[type="range"]::-moz-range-progress {
+      background-color: white;
+    }
+
+    input[type="range"]::-moz-focus-outer {
+      border: 0;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      box-sizing: content-box;
+      border: thin solid white;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: black;
+      cursor: pointer;
+    }
+
+    input[type="range"]:active::-moz-range-thumb {
+      transform: scale(1.2);
+      background: white;
+    }
+
+    input[type="range"]::-ms-track {
+      width: 100%;
+      height: 1px;
+      cursor: pointer;
+      background: transparent;
+      border: solid transparent;
+      color: transparent;
+    }
+
+    input[type="range"]::-ms-fill-lower {
+      background-color: white;
+    }
+
+    input[type="range"]::-ms-fill-upper {
+      background: linear-gradient(to right,
+          rgba(255, 255, 255, 0.6) var(--buffered-width),
+          rgba(255, 255, 255, 0.3) var(--buffered-width));
+    }
+
+    input[type="range"]::-ms-thumb {
+      box-sizing: content-box;
+      border: thin solid white;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    input[type="range"]:active::-ms-thumb {
+      transform: scale(1.2);
+      background: white;
+    }
+  </style>
+  <div id="audio-wrapper">
+    <div id="audio-player-container">
+      <!-- <h3>Test 1</h3> -->
+      <audio preload=”metadata” loop></audio>
+      <button id="play-icon"></button>
+      <span id="current-time" class="time">0:00</span>
+      <input type="range" id="seek-slider" max="100" value="0">
+      <span id="duration" class="time">0:00</span>
+      <output id="volume-output">100</output>
+      <input type="range" id="volume-slider" max="100" value="100">
+      <button id="mute-icon"></button>
+    </div>
+
+</template>
+
+<div class="content-container">
+  <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+  {% include headline.html %}
+  {% include navigation.html %}
+
+  <div id="audios-wrapper">
+    <h3>Test 1</h3>
+    <audio-player data-src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3"></audio-player>
+    <!---------------------------------------->
+    <!---------------------------------------->
+    <h3>Test 2</h3>
+    <audio-player data-src="https://dl.dropboxusercontent.com/s/kqif28hjwuemgyt/01_sydney-diealtruisten-monolog.mp3?dl=0"></audio-player>
+    <!---------------------------------------->
+    <!---------------------------------------->
+    <h3>Test 3</h3>
+    <audio-player data-src="https://dl.dropboxusercontent.com/s/mftb8gf6amqbbu9/02_eboli-doncarlos-monolog.mp3?dl=0"></audio-player>
+    <!---------------------------------------->
+    <!---------------------------------------->
+    <h3>Test 1</h3>
+    <audio-player data-src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3"></audio-player>
+    <!---------------------------------------->
+    <!---------------------------------------->
+
+  </div>
+</div>

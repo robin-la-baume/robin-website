@@ -1,0 +1,23 @@
+#contact {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05rem;
+}
+
+#contact p {
+  margin: 2rem 0 1rem 0;
+  border-bottom: thin solid white;
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    margin-left: 1rem;
+  }
+
+  #contact p {
+    margin-top: 1.25rem;
+  }
+}
