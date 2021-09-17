@@ -12,6 +12,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 $background-color: black;
+$text-color: white;
+$markup-color: white;
+$font: Manrope;
+$font-size: 10px;
+$font-weight-light: 200;
+$font-weight-regular: 400;
 
 @-webkit-keyframes fade {
   from {
@@ -36,13 +42,13 @@ $background-color: black;
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: black;
-  background: white;
+  color: $background-color;
+  background: $text-color;
 }
 
 ::selection {
-  color: black;
-  background: white;
+  color: $background-color;
+  background: $text-color;
 }
 
 body, html {
@@ -54,16 +60,16 @@ body, html {
 
 body {
   background-color: black;
-  font-family: 'Manrope', Arial, Helvetica, sans-serif !important;
-  color: white;
-  font-weight: 200;
-  font-size: 10px;
+  font-family: $font, Arial, Helvetica, sans-serif !important;
+  color: $text-color;
+  font-weight: $font-weight-light;
+  font-size: $font-size;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2 {
   font-size: 4vw;
-  font-weight: 400;
+  font-weight: $font-weight-regular;
   text-transform: uppercase;
   line-height: 1;
 }
@@ -78,7 +84,7 @@ h1, h2 {
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: $font-weight-regular;
   text-transform: uppercase;
   line-height: 1;
 }
@@ -89,7 +95,7 @@ a {
 }
 
 button {
-  font-family: 'Manrope', Arial, Helvetica, sans-serif !important;
+  font-family: $font, Arial, Helvetica, sans-serif !important;
   letter-spacing: 0.075rem;
   font-weight: 500 !important;
 }
@@ -162,7 +168,7 @@ button {
 .headline-wrapper {
   padding-left: 2vw;
   grid-area: headline;
-  border-bottom: thin solid white;
+  border-bottom: thin solid $markup-color;
   display: flex;
   align-items: center;
 }
@@ -177,12 +183,12 @@ button {
 }
 
 footer {
-  border-top: thin solid white;
+  border-top: thin solid $markup-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 6rem;
-  background-color: black;
+  background-color: $background-color;
 }
 
 footer h3 {
