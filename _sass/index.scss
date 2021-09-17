@@ -28,11 +28,11 @@ ul {
 }
 
 #title h1 {
-  margin: 0.6rem 0 0 1.8rem;
+  margin: calc(var(--space-standard) * .55) 0 0 1.8rem;
 }
 
 #title h1 #forename {
-  margin-left: 1em;
+  margin-left: calc(var(--space-standard) * .5);
 }
 #title h1 #middlename {
   margin-left: 3em;
@@ -49,9 +49,9 @@ ul {
 #social #theapolis {
   width: 6vw;
   height: 6vw;
-  border: thin solid white;
+  border: thin solid var(--markup-color);
   border-radius: 50%;
-  margin-right: 2rem;
+  margin-right: var(--space-standard);
   display: flex;
   align-items: center;
   transition: 0.2s;
@@ -69,12 +69,12 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   display: block;
-  background-color: white;
+  background-color: var(--markup-color);
 }
 
 #social #instagram:hover,
 #social #theapolis:hover {
-  background-color: white;
+  background-color: var(--markup-color);
 }
 
 #content-1 {
@@ -83,14 +83,14 @@ ul {
 
 #content-1 h2 {
   margin-top: 0.6rem;
-  margin-right: 6rem;
+  margin-right: calc(var(--space-standard) * 3);
   line-height: 1.05;
   float: right;
 }
 
 #content-2 {
   grid-area: content-2;
-  border-top: thin solid white;
+  border-top: thin solid var(--markup-color);
 }
 
 #content-2 h2 {
@@ -102,20 +102,19 @@ ul {
 }
 
 #content-2 h3 a {
-  padding-bottom: 1rem;
+  padding-bottom: calc(var(--space-standard) * 0.5);
   transition: all 0.2s;
   margin: 0;
   letter-spacing: 0.05rem;
 }
 
 #content-2 h3 a:hover {
-  /* border-bottom: thin solid white; */
   letter-spacing: 0.1rem;
 }
 
 #content-2 .underline {
   display: none;
-  background-color: white;
+  background-color: var(--markup-color);
   width: 100%;
   height: 0.05rem;
   margin-left: 100%;
@@ -144,8 +143,8 @@ ul {
 
   #social #instagram,
   #social #theapolis {
-    width: 12vw;
-    height: 12vw;
+    width: 60px;
+    height: 60px;
     margin-right: 1rem;
   }
 
@@ -165,6 +164,7 @@ ul {
 
   #content-2 {
     border-top: none;
+    padding-bottom: 20vh;
   }
 
   #content-2 h2 {
@@ -175,7 +175,7 @@ ul {
     display: block;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: thin solid white;
+    border-bottom: thin solid var(--markup-color);
   }
 
   #content-2 h3 a {

@@ -8,16 +8,21 @@
 }
 
 #contact p {
-  margin: 2rem 0 1rem 0;
+  margin: calc(var(--space-standard) * 0.55) 0 1rem 0;
   border-bottom: thin solid white;
 }
 
-@media screen and (max-width: 768px) {
-  #contact {
-    margin-left: 1rem;
-  }
+#contact li a {
+  border-bottom: thin solid;
+  border-color: var(--background-color);
+  transition: all .2s;
+}
 
-  #contact p {
-    margin-top: 1.25rem;
-  }
+#contact li a:hover {
+  border-color:  var(--markup-color);
+  letter-spacing: 0.075rem;
+}
+
+@media screen and (max-width: 768px) {
+
 }

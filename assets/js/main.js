@@ -39,31 +39,34 @@ for (let i = 0; i < menuButton.length; i++) {
 	})
 }
 
-const buttonTag = document.querySelector('div.burger-wrapper');
-const menuTag = document.querySelector('nav');
-const middleLineTag = document.querySelector('div.burger-middle-line');
-const topLineTag = document.querySelector('div.burger-top-line');
-const bottomLineTag = document.querySelector('div.burger-bottom-line');
-const contentTag = document.querySelector('.content-wrapper');
+const buttonTag = document.querySelector('#mobile-menu-btn');
+const menuTag = document.querySelector('#mobile-menu');
+const middleLineTag = document.querySelector('#middle-line');
+const topLineTag = document.querySelector('#top-line');
+const bottomLineTag = document.querySelector('#bottom-line');
+// const contentTag = document.querySelector('.content-wrapper');
+const contentTag = document.querySelector('.content-container');
+const startContentTag = document.querySelector('.start-container');
 
 
 buttonTag.addEventListener('click', function() {
-  menuTag.classList.toggle('menu-open');
+  menuTag.classList.toggle('open');
+	menuTag.classList.toggle('menu-open');
+	// startContentTag.classList.toggle('start-blur');
+	contentTag.classList.toggle('blur');
+	
 
   if (menuTag.classList.contains('menu-open')) {
-    // buttonTag.style.transform = 'translateX(calc(-100vw + 60px))';
     middleLineTag.style.opacity = '0';
-    topLineTag.style.transform = 'rotate(45deg) translate(7px, 8px)';
-    bottomLineTag.style.transform = 'rotate(-45deg) translate(7px, -8px)';
+    topLineTag.style.transform = 'rotate(45deg) translate(8px, 10px)';
+    bottomLineTag.style.transform = 'rotate(-45deg) translate(8px, -10px)';
     titleTag.style.transform = 'translateX(-400px)';
-    // contentTag.style.transform = 'translateX(calc(-100vw + 60px))';
   } else {
     buttonTag.style.transform = 'translateX(0)';
     middleLineTag.style.opacity = '1';
     topLineTag.style.transform = 'rotate(0deg) translate(0)';
     bottomLineTag.style.transform = 'rotate(0deg) translate(0)';
     titleTag.style.transform = 'translateX(0)';
-    contentTag.style.transform = 'translateX(0)';
   };
 });
 

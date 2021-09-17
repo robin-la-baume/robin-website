@@ -5,6 +5,7 @@
   --font: Manrope;
   --font-size-base: 10px;
   --font-size: 1.5rem;
+  --font-size-headline: clamp(2rem, 4vw, 4rem);
   --font-weight-light: 200;
   --font-weight-thin: 300;
   --font-weight-regular: 400;
@@ -14,4 +15,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  :root {
+    --font-size: 1rem;
+    --space-standard: 1.5rem;
+    --font-weight-thin: 400;
+  }
 }

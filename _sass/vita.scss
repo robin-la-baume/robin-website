@@ -40,7 +40,7 @@
 }
 
 #resume {
-  font-size: 1.5rem;
+  font-size: var(--font-size);
   font-weight: var(--font-weight-thin);
   margin-top: calc( var(--space-standard) * 0.5 );
   margin-left: var(--space-standard);
@@ -52,7 +52,7 @@
 }
 
 #resume p {
-  margin: calc( var(--space-standard) * 1.25) 0 calc( var(--space-standard) * .5) 0;
+  margin: calc( var(--space-standard) * 1.05) 0 calc( var(--space-standard) * .5) 0;
   padding-bottom: calc( var(--space-standard) * 0.6);
   border-bottom: thin solid var(--markup-color);
   cursor: pointer;
@@ -105,4 +105,8 @@
 #resume ul {
   letter-spacing: 0.05rem;
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+
 }

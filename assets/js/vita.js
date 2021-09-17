@@ -45,18 +45,10 @@ window.onload = function () {
   }
 }
 
-
-
 const vitaAccordion = document.querySelectorAll("#resume p");
 const vitaContent = document.querySelectorAll("#resume ul");
 const vitaToggle = document.querySelectorAll("#resume p span");
 const t = document.querySelector('template');
-
-
-
-
-
-
 
 for (let i = 0; i < vitaAccordion.length; i++) {
   const clone = document.importNode(t.content, true);
@@ -71,12 +63,8 @@ for (let i = 0; i < vitaAccordion.length; i++) {
       } else {
         $(vitaToggle[i]).css("transform", "rotate(0deg)")
       }
-
     });
   })
-
 }
-
-
 
 console.log(vitaToggle);
