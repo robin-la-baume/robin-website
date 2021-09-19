@@ -45,15 +45,14 @@ const middleLineTag = document.querySelector('#middle-line');
 const topLineTag = document.querySelector('#top-line');
 const bottomLineTag = document.querySelector('#bottom-line');
 // const contentTag = document.querySelector('.content-wrapper');
-const contentTag = document.querySelector('.content-container');
-const startContentTag = document.querySelector('.start-container');
+const effectTag = document.querySelector('.effect');
 
 
 buttonTag.addEventListener('click', function() {
   menuTag.classList.toggle('open');
 	menuTag.classList.toggle('menu-open');
 	// startContentTag.classList.toggle('start-blur');
-	contentTag.classList.toggle('blur');
+	effectTag.classList.toggle('blur');
 	
 
   if (menuTag.classList.contains('menu-open')) {

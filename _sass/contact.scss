@@ -1,28 +1,31 @@
-#contact {
-  font-size: 1.5rem;
+#contact-wrapper {
+  font-size: var(--font-size);
   font-weight: 300;
   margin-top: 0;
-  margin-left: 2rem;
+  margin-left: var(--space-standard);
+  margin-right: var(--space-standard);
   margin-bottom: 2rem;
   letter-spacing: 0.05rem;
 }
 
-#contact p {
-  margin: calc(var(--space-standard) * 0.55) 0 1rem 0;
-  border-bottom: thin solid white;
+#contact-wrapper h3 {
+  border-bottom: thin solid var(--markup-color);
+  padding-bottom: calc(var(--space-standard) * 0.5);
 }
 
-#contact li a {
+#contact-wrapper p {
+  margin: calc(var(--space-standard) * 0.55) 0 1rem 0;
+  // border-bottom: thin solid white;
+  font-size: var(--font-size);
+}
+
+#contact-wrapper li a {
   border-bottom: thin solid;
   border-color: var(--background-color);
   transition: all .2s;
 }
 
-#contact li a:hover {
+#contact-wrapper li a:hover {
   border-color:  var(--markup-color);
   letter-spacing: 0.075rem;
-}
-
-@media screen and (max-width: 768px) {
-
 }

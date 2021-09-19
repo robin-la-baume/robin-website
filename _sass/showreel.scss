@@ -15,27 +15,39 @@
   position: absolute;
   bottom: 0;
   right:0;
-  color: white;
+  color: var(--markup-color);
   padding: 2rem;
   font-weight: 200 !important;
 }
 
 .showreel-controls {
   min-width: 8vw;
-  font-size: 2vw;
-  margin-left: 2rem;
-  padding: 1rem 2rem;
+  font-size: var(--font-size);
+  margin-left: var(--space-standard);
+  padding: calc(var(--space-standard) / 2) var(--space-standard);
   border: none;
-  background: white;
-  color: black;
+  background: var(--markup-color);
+  color: var(--background-color);
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 4vw;
-  border: thin solid white;
+  border: thin solid var(--markup-color);
   transition: 0.2s;
 }
 
 .showreel-controls:hover {
-  background: black;
-  color: white;
+  background: var(--background-color);
+  color: var(--markup-color);
+}
+
+@media screen and (max-width: 425px) {
+  #showreel-content {
+
+    padding: 0 var(--space-standard) 0 0;
+  }
+
+  .showreel-controls { 
+    border-radius: 9vw;
+    margin: 0 0 var(--space-standard) var(--space-standard);
+  }
 }
