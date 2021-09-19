@@ -1,8 +1,13 @@
+#foto-container .headline-wrapper {
+  background-image: none;
+  background-color: var(--background-color);
+}
+
 #foto-wrapper {
+  grid-area: content;
   display: inline-block;
   overflow-y: scroll;
-  width: 100%;
-  height: 100%;
+
 }
 
 .popup-gallery {
@@ -37,8 +42,15 @@
 @media screen and (max-width: 768px) {
 
   .popup-gallery {
+    background-position-x: 0;
+    opacity: 1 !important;
     width: 50%;
     height: 25%;
+  }
+
+  .gallery-item {
+    background-position: top;
+    opacity: 1;
   }
 }
 

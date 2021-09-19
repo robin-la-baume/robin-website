@@ -10,7 +10,7 @@
 @import "showreel";
 @import "vita";
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 @-webkit-keyframes fade {
   from {
@@ -34,7 +34,8 @@
   box-sizing: border-box;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: var(--background-color);
   background: var(--text-color);
 }
@@ -44,7 +45,8 @@
   background: var(--text-color);
 }
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -65,7 +67,8 @@ body {
   display: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: var(--font-size-headline);
   font-weight: var(--font-weight-regular);
   text-transform: uppercase;
@@ -114,22 +117,22 @@ button {
 }
 
 #sidebar ul li.menu-button h3 {
-  margin-bottom: .5rem;
-  transition: letter-spacing .2s;
+  margin-bottom: 0.5rem;
+  transition: letter-spacing 0.2s;
 }
 
 #sidebar ul li.menu-button h3:hover {
   letter-spacing: 0.1rem;
 }
 
-#sidebar ul li.menu-underline{
+#sidebar ul li.menu-underline {
   height: 1px;
   background-color: var(--markup-color);
   width: 130%;
   margin-left: -2rem;
   position: absolute;
   left: -130%;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .headline-wrapper {
@@ -139,6 +142,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+  z-index: 998;
 }
 
 .headline-wrapper h1 {
@@ -163,7 +171,6 @@ footer h3 {
   margin: 0;
   padding-left: var(--space-standard);
   padding-right: var(--space-standard);
-  
 }
 
 // mobile styles
@@ -185,10 +192,9 @@ footer h3 {
   width: 100%;
   height: 2px;
   background-color: var(--markup-color);
-  margin-bottom: calc( var(--space-standard) * .45);
+  margin-bottom: calc(var(--space-standard) * 0.45);
 }
 @media screen and (max-width: 768px) {
-
   .mobile {
     display: block;
   }
@@ -208,7 +214,7 @@ footer h3 {
     position: fixed;
     z-index: 998;
     // background-color: var(--background-color);
-    background-color: rgba($color: #000000, $alpha: .4);
+    background-color: rgba($color: #000000, $alpha: 0.4);
     display: none;
     align-items: center;
   }

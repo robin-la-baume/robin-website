@@ -1,3 +1,7 @@
+#vita-wrapper {
+  grid-area: content;
+}
+
 #vita-content {
   background: linear-gradient(180deg, var(--background-color), transparent);
   margin-bottom: calc( var(--space-standard) - .9);
@@ -5,10 +9,10 @@
   padding-bottom: 0;
   font-weight: var(--font-weight-light) !important;
   display: inline-block;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  right: 0;
+  // position: -webkit-sticky;
+  // position: sticky;
+  // top: 0;
+  // right: 0;
   z-index: 1;
 }
 
