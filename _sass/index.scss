@@ -54,6 +54,7 @@ ul {
   margin-right: var(--space-standard);
   display: flex;
   align-items: center;
+  background-color: none;
   transition: 0.2s;
 }
 
@@ -64,12 +65,12 @@ ul {
 
 #social #instagram:hover h2,
 #social #theapolis:hover h2 {
-  background: url("/images/uploads/IMG_1799-1920w.jpeg") no-repeat center top;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  // background: url("/images/uploads/IMG_1799-1920w.jpeg") no-repeat center top;
+  // -webkit-text-fill-color: transparent;
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  color: #2c5031;
   display: block;
-  background-color: var(--markup-color);
 }
 
 #social #instagram:hover,
