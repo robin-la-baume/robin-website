@@ -102,6 +102,10 @@ ul {
   display: none;
 }
 
+#content-2 h3 {
+  margin-bottom: .75rem;
+}
+
 #content-2 h3 a {
   padding-bottom: calc(var(--space-standard) * 0.5);
   transition: all 0.2s;
