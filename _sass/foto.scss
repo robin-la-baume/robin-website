@@ -48,7 +48,7 @@
     height: 25%;
   }
 
-  .gallery-item {
+  .gallery-item, .popup-gallery:hover .gallery-item {
     background-position: top;
     opacity: 1;
   }
