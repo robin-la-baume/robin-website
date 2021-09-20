@@ -22,4 +22,17 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+	const galleryTag = document.querySelectorAll('#foto-wrapper');
+	const galleryTagHeight = $(galleryTag).height();
+
+	$(galleryTag).scroll(function(){
+    let wScroll = $(this).scrollTop();
+		if(wScroll < galleryTagHeight-1) {
+			$('footer').css('display', 'none')
+		} else {
+			$('footer').css('display', 'flex')
+		}
+    // console.log(wScroll);
+  });
 });
