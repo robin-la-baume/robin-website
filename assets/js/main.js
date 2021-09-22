@@ -39,6 +39,7 @@ for (let i = 0; i < menuButton.length; i++) {
 	})
 }
 
+const bodyTag = document.querySelector('body');
 const buttonTag = document.querySelector('#mobile-menu-btn');
 const menuTag = document.querySelector('#mobile-menu');
 const middleLineTag = document.querySelector('#middle-line');
@@ -59,13 +60,14 @@ buttonTag.addEventListener('click', function() {
     middleLineTag.style.opacity = '0';
     topLineTag.style.transform = 'rotate(45deg) translate(8px, 10px)';
     bottomLineTag.style.transform = 'rotate(-45deg) translate(8px, -10px)';
-    titleTag.style.transform = 'translateX(-400px)';
+		bodyTag.style.overflow = 'hidden';
   } else {
     buttonTag.style.transform = 'translateX(0)';
     middleLineTag.style.opacity = '1';
     topLineTag.style.transform = 'rotate(0deg) translate(0)';
     bottomLineTag.style.transform = 'rotate(0deg) translate(0)';
-    titleTag.style.transform = 'translateX(0)';
+		bodyTag.style.overflow = 'auto';
   };
+
 });
 
