@@ -1,11 +1,12 @@
 backend:
-  name: git-gateway
+  name: github
   repo: robin-la-baume/robin-website # Path to your GitHub repository
   branch: main
 
 media_folder: "assets/images/uploads"
 
 collections:
+# --------------- Homepage --------------------
   - name: "home_page"
     label: "Home Page"
     files:
@@ -16,3 +17,23 @@ collections:
           - label: "Instagram URL"
             name: "instagram_url"
             widget: "string"
+          - label: "Theapolis URL"
+            name: "theapolis_url"
+            widget: "string"
+          - label: "News Title"
+            name: "news_title"
+            widget: "string"
+          - label: "News Untertitel #1"
+            name: "news_subline_1"
+            widget: "string"
+          - label: "News Untertitel #2"
+            name: "news_subline_2"
+            widget: "string"
+          - label: "News Datum"
+            name: "news_date"
+            widget: "datetime"
+            default: ""
+            date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+            time_format: false
+            format: "LLL"
+            picker_utc: true
