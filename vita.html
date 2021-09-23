@@ -1,7 +1,5 @@
 ---
 title: Vita
-date_of_birth_head: Geburtsjahr
-date_of_birth: 1989
 ---
 
 <template>
@@ -21,85 +19,56 @@ date_of_birth: 1989
   <div id="vita-wrapper">
     <div id="vita-content">
       <button class="platforms-btn" id="castforward-btn" onclick="castforward()">Castupload</button>
-      <!-- <button class="platforms-btn" id="castupload-btn" onclick="#">Castupload</button> -->
       <button class="platforms-btn" id="filmmakers-btn" onclick="filmmakers()">Filmmakers</button>
       <button class="platforms-btn" id="schauspielervideos-btn"
         onclick="schauspielervideos()">Schauspielervideos</button>
     </div>
 
     <div id="resume">
-      <p class="head"><span></span>{{ page.date_of_birth_head }}</p>
+      <p class="head"><span></span>{{ site.data.vita.date_of_birth_head }}</p>
       <ul>
-        <li>{{ page.date_of_birth }}</li>
+        <li>{{ site.data.vita.date_of_birth }}</li>
       </ul>
-      <p class="head"><span></span>Interests</p>
+      <p class="head"><span></span>{{ site.data.vita.birth_place_head }}</p>
       <ul>
-        <li>Drawing</li>
-        <li>Photography</li>
-        <li>Design</li>
-        <li>Programming</li>
-        <li>Computer Science</li>
+        <li>{{ site.data.vita.birth_place }}</li>
       </ul>
-      <p class="head"><span></span>Skills</p>
+      <p class="head"><span></span>{{ site.data.vita.living_head }}</p>
       <ul>
-        <li>Web Design with HTML & CSS</li>
+        <li>{{ site.data.vita.living }}</li>
       </ul>
-      <p class="head"><span></span>Education</p>
+      <p class="head"><span></span>{{ site.data.vita.nationality_head }}</p>
       <ul>
-        <a href="http://www.wiltonhighschool.org/pages/Wilton_High_School">
-          <li>Wilton High School</li>
-        </a>
-        <!--Link-->
-        <a href="https://www.silvermineart.org/">
-          <li>Silvermine School of Arts</li>
-        </a>
-        <li>Codeacademy</li>
+        <li>{{ site.data.vita.nationality }}</li>
       </ul>
-      <p class="head"><span></span>Experience</p>
+      <p class="head"><span></span>{{ site.data.vita.height_head }}</p>
       <ul>
-        <li>Student Technology Intern for Wilton School District</li>
-        <li>Babysitter</li>
+        <li>{{ site.data.vita.height }}</li>
       </ul>
-      <p class="head"><span></span>Extracurriculars</p>
+      <p class="head"><span></span>{{ site.data.vita.hair_color_head }}</p>
       <ul>
-        <li>Recycling Club</li>
-        <li>Gardening Club</li>
-        <li>Book Club</li>
-        <li>Drawing</li>
-        <li>Photography</li>
-        <li>Design</li>
-        <li>Programming</li>
-        <li>Computer Science</li>
+        <li>{{ site.data.vita.hair_color }}</li>
       </ul>
-      <p class="head"><span></span>Skills</p>
+      <p class="head"><span></span>{{ site.data.vita.eye_color_head }}</p>
       <ul>
-        <li>Web Design with HTML & CSS</li>
+        <li>{{ site.data.vita.eye_color }}</li>
       </ul>
-      <p class="head"><span></span>Education</p>
+      <p class="head"><span></span>{{ site.data.vita.languages_head }}</p>
       <ul>
-        <a href="http://www.wiltonhighschool.org/pages/Wilton_High_School">
-          <li>Wilton High School</li>
-        </a>
-        <!--Link-->
-        <a href="https://www.silvermineart.org/">
-          <li>Silvermine School of Arts</li>
-        </a>
-        <li>Codeacademy</li>
+        <li>{{ site.data.vita.languages }}</li>
       </ul>
-      <p class="head"><span></span>Experience</p>
+      <p class="head"><span></span>{{ site.data.vita.dialects_head }}</p>
       <ul>
-        <li>Student Technology Intern for Wilton School District</li>
-        <li>Babysitter</li>
+        <li>{{ site.data.vita.dialects }}</li>
       </ul>
-      <p class="head"><span></span>Extracurriculars</p>
+      <p class="head"><span></span>{{ site.data.vita.education_head }}</p>
       <ul>
-        <li>Recycling Club</li>
-        <li>Gardening Club</li>
-        <li>Book Club</li>
+        <li>{{ site.data.vita.education_date }}</li>
+        <li>{{ site.data.vita.education }}</li>
+
+        <li>{{ site.data.vita.education_date }}</li>
+        <li>{{ site.data.vita.education }}</li>
       </ul>
     </div>
-
-
-
   </div>
 </div>
