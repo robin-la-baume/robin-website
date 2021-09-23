@@ -1,5 +1,7 @@
 ---
 title: Vita
+date_of_birth_head: Geburtsjahr
+date_of_birth: 1989
 ---
 
 <template>
@@ -26,6 +28,10 @@ title: Vita
     </div>
 
     <div id="resume">
+      <p class="head"><span></span>{{ page.date_of_birth_head }}</p>
+      <ul>
+        <li>{{ page.date_of_birth }}</li>
+      </ul>
       <p class="head"><span></span>Interests</p>
       <ul>
         <li>Drawing</li>

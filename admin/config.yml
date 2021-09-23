@@ -38,3 +38,11 @@ collections:
             time_format: false
             format: "DD.MM.YYYY"
             picker_utc: true
+# --------------- Homepage --------------------
+  - label: "Vita"
+    name: "vita"
+    file: "vita.html"
+    fields: 
+      - label: "Geburtsjahr"
+        name: "date_of_birth"
+        widget: "string"
