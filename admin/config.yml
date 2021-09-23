@@ -7,6 +7,8 @@ media_folder: "assets/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+# ---------------------------------------------
+# ---------------------------------------------
   - name: "allgemein"
     label: "Allgemein"
     files:
@@ -31,6 +33,21 @@ collections:
             widget: "string"
           - label: "Agentur"
             name: "agency"
+            widget: "string"
+          - label: "Agentur Straße"
+            name: "agency_street"
+            widget: "string"
+          - label: "Agentur PLZ"
+            name: "agency_post_code"
+            widget: "string"
+          - label: "Agentur Stadt"
+            name: "agency_city"
+            widget: "string"
+          - label: "Agentur Tel.-Nr"
+            name: "agency_tel"
+            widget: "string"
+          - label: "Agentur eMail"
+            name: "agency_email"
             widget: "string"
 # ---------------------------------------------
 # ---------------------------------------------
