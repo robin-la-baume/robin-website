@@ -122,9 +122,7 @@ collections:
             widget: "string"
           - label: "Ausbildung"
             name: "education_details"
-            widget: "object"
-            collapsed: true
-            create: true
+            widget: "list"
             fields:
               - label: "Zeitraum"
                 name: "education_date"
