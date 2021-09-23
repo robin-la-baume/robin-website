@@ -88,8 +88,11 @@ collections:
 # --------------- Vita --------------------
       - label: "Vita"
         name: "vita"
-        file: "vita.html"
+        file: "_data/vita.yml"
         fields: 
           - label: "Geburtsjahr"
             name: "date_of_birth"
+            widget: "string"
+          - label: "Geburtsort"
+            name: "birth_place"
             widget: "string"
