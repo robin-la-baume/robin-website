@@ -124,6 +124,7 @@ collections:
             name: "education_details"
             widget: "object"
             collapsed: true
+            create: true
             fields:
               - label: "Zeitraum"
                 name: "education_date"
