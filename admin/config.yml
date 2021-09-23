@@ -122,9 +122,6 @@ collections:
             widget: "string"
           - label: "Ausbildung"
             name: "education_details"
-            widget: "object"
-            create: true
-            fields:
-              - label: "test"
-                name: "education_date"
-                widget: "string"
+            widget: "list"
+            allow_add: true
+            field: {label: "test", name: "education_date", widget: "string"}
