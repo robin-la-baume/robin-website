@@ -36,5 +36,5 @@ collections:
             default: ""
             date_format: "DD.MM.YYYY" # e.g. 24.12.2021
             time_format: false
-            format: "LLL"
+            format: "Do MM YY"
             picker_utc: true
