@@ -8,14 +8,14 @@ title: Kontakt
 
   <div id="contact-wrapper">
     <div id="contact">
-      <p class="head">Knudsen Management</p>
+      <p class="head">{{ site.data.general.agency }}</p>
       <ul>
-        <li>Inhaberin: Kerstin Knudsen</li>
-        <li>Harkortstraße 95</li>
-        <li>22765 Hamburg</li>
+        <li>Inhaberin: {{ site.data.general.agency_owner }}</li>
+        <li>{{ site.data.general.agency_street }}</li>
+        <li>{{ site.data.general.agency_post_code }} {{ site.data.general.agency_city }}</li>
         <br>
-        <li>+49 (0)40.53 30 7000</li>
-        <li><a href="mailto:info@knudsen-management.de">info[at]knudsen-management.de</a></li>
+        <li>{{ site.data.general.agency_tel }}</li>
+        <li><a href="mailto:{{ site.data.general.agency_email }}">info[at]knudsen-management.de</a></li>
       </ul>
     </div>
 
