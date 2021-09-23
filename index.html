@@ -3,10 +3,11 @@ title: Yana Robin la Baume
 instagram_url: "https://www.instagram.com/yanalarobin/"
 theapolis_url: "https://www.theapolis.de/de/profil/yana-robin-la-baume"
 news_title: »Was ihr wollt«
+news_subline_1: Premiere
+news_subline_2: Theater Münster
+news_date: "05.11.2021"
 news_url: "https://www.theater-muenster.com/produktionen/was-ihr-wollt.html?m=188" 
 ---
-
-<!-- {% include mobile-navigation.html %} -->
 
 <div class="start-container effect">
   <div id="title">
@@ -30,9 +31,9 @@ news_url: "https://www.theater-muenster.com/produktionen/was-ihr-wollt.html?m=18
   </div>
   <div id="content-2">
     <h2><span>Aktuell<br></span>{{ page.news_title }}<br>
-      Premiere<br>
-      Theater Münster<br>
-      → 05.11.2021
+      {{ page.news_subline_1 }}<br>
+      {{ page.news_subline_2 }}<br>
+      → {{ page.news_date }}
     </h2>
     <h3><a href={{ page.news_url }}target="_blank">↳ Read more</a></h3>
     <div class="underline"></div>
