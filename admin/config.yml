@@ -24,10 +24,13 @@ collections:
             name: "forename"
             widget: "string"
           - label: "Zweitname"
-            name: "Middlename"
+            name: "middlename"
             widget: "string"
           - label: "Nachname"
             name: "surename"
+            widget: "string"
+          - label: "Agentur"
+            name: "agency"
             widget: "string"
 # ---------------------------------------------
 # ---------------------------------------------
