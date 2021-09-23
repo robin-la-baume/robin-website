@@ -7,10 +7,22 @@ media_folder: "assets/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-# --------------- Homepage --------------------
-  - name: "home_page"
-    label: "Home Page"
+    - name: "allgemein"
+      label: "Allgemein"
+      files:
+        - label: "allgemein"
+          name: "Allgemein"
+          file: "_data/general.yml"
+          fields:
+            - label: "Name"
+              name: "name"
+              widget: "string"
+# ---------------------------------------------
+# ---------------------------------------------
+  - name: "seiteninhalte"
+    label: "Seiteninhalte"
     files:
+# --------------- Homepage --------------------
       - label: "Home Page"
         name: "home"
         file: "index.html"
@@ -38,11 +50,11 @@ collections:
             time_format: false
             format: "DD.MM.YYYY"
             picker_utc: true
-# --------------- Homepage --------------------
-  - label: "Vita"
-    name: "vita"
-    file: "vita.html"
-    fields: 
-      - label: "Geburtsjahr"
-        name: "date_of_birth"
-        widget: "string"
+# --------------- Vita --------------------
+      - label: "Vita"
+        name: "vita"
+        file: "vita.html"
+        fields: 
+          - label: "Geburtsjahr"
+            name: "date_of_birth"
+            widget: "string"
