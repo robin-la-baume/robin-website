@@ -7,16 +7,16 @@ media_folder: "assets/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-    - name: "allgemein"
-      label: "Allgemein"
-      files:
-        - label: "allgemein"
-          name: "Allgemein"
-          file: "_data/general.yml"
-          fields:
-            - label: "Name"
-              name: "name"
-              widget: "string"
+  - name: "allgemein"
+    label: "Allgemein"
+    files:
+      - label: "Allgemein"
+        name: "allgemein"
+        file: "_data/general.yml"
+        fields:
+          - label: "Vorname"
+            name: "forename"
+            widget: "string"
 # ---------------------------------------------
 # ---------------------------------------------
   - name: "seiteninhalte"
