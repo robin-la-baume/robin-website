@@ -25,6 +25,7 @@ languages: Englisch (2), Spanisch (2)
 dialects_head: Dialekte
 dialects: norddeutsch
 
-education_head: Ausbildung
-education_date: 2010 – 2014
-education: Hochschule für Musik und darstellende Kunst Stuttgart
+education_details:
+  education_head: Ausbildung
+  education_date: 2010 – 2014
+  education: Hochschule für Musik und darstellende Kunst Stuttgart
