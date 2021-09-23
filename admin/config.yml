@@ -123,5 +123,7 @@ collections:
           - label: "Ausbildung"
             name: "education_details"
             widget: "list"
-            allow_add: true
-            field: {label: "test", name: "education_date", widget: "string"}
+            types: 
+              - label: "Zeitraum"
+                name: "education_date"
+                widget: "string"
