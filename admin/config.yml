@@ -14,8 +14,20 @@ collections:
         name: "allgemein"
         file: "_data/general.yml"
         fields:
+          - label: "Jahr"
+            name: "year"
+            widget: "date"
+            default: ""
+            date_format: 'YYYY'
+            picker_utc: true
           - label: "Vorname"
             name: "forename"
+            widget: "string"
+          - label: "Zweitname"
+            name: "Middlename"
+            widget: "string"
+          - label: "Nachname"
+            name: "surename"
             widget: "string"
 # ---------------------------------------------
 # ---------------------------------------------
