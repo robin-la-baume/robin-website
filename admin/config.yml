@@ -123,7 +123,10 @@ collections:
           - label: "Ausbildung"
             name: "education_details"
             widget: "list"
-            types: 
+            fields: 
               - label: "Zeitraum"
                 name: "education_date"
+                widget: "string"
+              - label: "Ausbildungsstätte"
+                name: "education"
                 widget: "string"
