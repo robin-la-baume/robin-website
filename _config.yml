@@ -15,3 +15,5 @@ future: true
 collections:
   audios:
     output: true
+  vita_datas:
+    output: true
