@@ -13,4 +13,4 @@ defaults:
 
 collections:
   audios:
-  output: true
+    output: true
