@@ -88,10 +88,10 @@ collections:
     name: "vita"
     folder: "_vita_datas"
     create: true
-    slug: "{{date_of_birth_head}}"
+    slug: "{{head}}"
     fields:
-      - label: "Label"
-        name: "label"
+      - label: "Head"
+        name: "head"
         widget: "string"
       - label: "Data"
         name: "data"
