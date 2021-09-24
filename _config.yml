@@ -10,3 +10,7 @@ defaults:
     type: pages
   values:
     layout: default
+
+collections:
+  audios:
+  output: true
