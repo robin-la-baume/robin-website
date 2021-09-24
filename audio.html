@@ -293,5 +293,10 @@ title: Audio
     <!---------------------------------------->
     <!---------------------------------------->
 
+    {% for audio in posts.audios %}
+      <h3>{{ audio.title }}</h3>
+      <audio-player data-src="{{ audio.file_path }}"></audio-player>
+    {% endfor %}
+
   </div>
 </div>

@@ -120,3 +120,17 @@ collections:
             name: "dialects"
             widget: "string"
 
+
+# --------------- Audio --------------------
+      - label: "Audio"
+        name: "audio"
+        file: "_posts/audios"
+        create: true
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+        fields:
+          - label: "Titel"
+            name: "title"
+            widget: "string"
+          - label: "Pfad"
+            name: "file_path"
+            widget: "string"
