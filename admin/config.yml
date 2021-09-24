@@ -132,5 +132,8 @@ collections:
         name: "title"
         widget: "string"
       - label: "Pfad"
+        name: "pathname"
+        widget: "string"
+      - label: "Pfad-URL"
         name: "file_path"
         widget: "string"

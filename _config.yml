@@ -6,10 +6,11 @@ sass:
 
 defaults:
 - scope:
-    path: ''
-    type: pages
+    path: ""
   values:
     layout: default
+
+future: true
 
 collections:
   audios:
