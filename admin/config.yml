@@ -126,7 +126,7 @@ collections:
     name: "audio"
     folder: "_audios"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    # slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - label: "Titel"
         name: "title"

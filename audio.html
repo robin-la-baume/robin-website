@@ -293,7 +293,7 @@ title: Audio
     <!---------------------------------------->
     <!---------------------------------------->
 
-    {% for audio in audios %}
+    {% for audio in site.audios %}
       <h3>{{ audio.title }}</h3>
       <audio-player data-src="{{ audio.file_path }}"></audio-player>
       {% else %}
