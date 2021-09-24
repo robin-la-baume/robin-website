@@ -277,9 +277,6 @@ title: Audio
 
   <div id="audios-wrapper">
 
-    <h3>Test Test</h3>
-    <audio-player data-src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3"></audio-player>
-
     {% for audio in site.audios %}
       <h3>{{ audio.title }}</h3>
       <audio-player data-src="{{ audio.file_path }}"></audio-player>
