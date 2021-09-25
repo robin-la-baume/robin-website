@@ -93,22 +93,23 @@ collections:
   # --------------- Vita --------------------
   - label: "Vita"
     name: "vita"
-    folder: "vita"
+    folder: "_vita"
     files:
-      - label: "Stammdatens"
-        name: "general"
-        file: "vita/general.yml"
+    - label: "Stammdatens"
+      name: "general"
+      file: "_vita/general.yml"
+      fields:
+      - label: "Stammdaten"
+        name: "general_datas"
+        widget: "object"
+        summary: "{{fields.head}}"
         fields:
-          - label: "Stammdaten"
-            name: "general_datas"
-            widget: "list"
-            fields:
-              - label: "Label"
-                name: "head"
-                widget: "string"
-              - label: "Data"
-                name: "data"
-                widget: "string"
+        - label: "Label"
+          name: "head"
+          widget: "string"
+        - label: "Data"
+          name: "data"
+          widget: "string"
 
 # --------------- Audio --------------------
   - label: "Audio"
