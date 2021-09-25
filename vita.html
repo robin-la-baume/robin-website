@@ -28,12 +28,7 @@ title: Vita
       {% for general_data in site.vita_details.vita.general_datas %}
         <p class="head"><span></span>{{ general_data.head }}</p>
         <ul>
-          <li>
-            <div class="date">{{ data.title }}</div>
-            <div class="info">
-              <p class="semi-bold">{{ data.data | markdownify }}</p>
-            </div>
-          </li>
+          <li>{{ general_data.data }}</li>
         </ul>
       {% endfor %}
 
