@@ -25,54 +25,18 @@ title: Vita
     </div>
 
     <div id="resume">
-      {% for detail in site.vita_details %}
-        <p class="head"><span></span>{{ detail.date_of_birth_head }}</p>
+      {% for general_data in site.vita_details.vita.general_datas %}
+        <p class="head"><span></span>{{ general_data.head }}</p>
         <ul>
-          <li>{{ detail.date_of_birth }}</li>
+          <li>
+            <div class="date">{{ data.title }}</div>
+            <div class="info">
+              <p class="semi-bold">{{ data.data | markdownify }}</p>
+            </div>
+          </li>
         </ul>
       {% endfor %}
-      <!-- <p class="head"><span></span>{{ site.data.vita.date_of_birth_head }}</p>
-      <ul>
-        <li>{{ site.data.vita.date_of_birth }}</li>
-      </ul>
-      <p class="head"><span></span>{{ site.data.vita.birth_place_head }}</p>
-      <ul>
-        <li>{{ site.data.vita.birth_place }}</li>
-      </ul>
-      <p class="head"><span></span>{{ site.data.vita.living_head }}</p>
-      <ul>
-        <li>{{ site.data.vita.living }}</li>
-      </ul>
-      <p class="head"><span></span>{{ site.data.vita.nationality_head }}</p>
-      <ul>
-        <li>{{ site.data.vita.nationality }}</li>
-      </ul>
-      <p class="head"><span></span>{{ site.data.vita.height_head }}</p>
-      <ul>
-        <li>{{ site.data.vita.height }}</li>
-      </ul>
-      <p class="head"><span></span>{{ site.data.vita.hair_color_head }}</p>
-      <ul>
-        <li>{{ site.data.vita.hair_color }}</li>
-      </ul>
-      <p class="head"><span></span>{{ site.data.vita.eye_color_head }}</p>
-      <ul>
-        <li>{{ site.data.vita.eye_color }}</li>
-      </ul>
-      <p class="head"><span></span>{{ site.data.vita.languages_head }}</p>
-      <ul>
-        <li>{{ site.data.vita.languages }}</li>
-      </ul>
-      <p class="head"><span></span>{{ site.data.vita.dialects_head }}</p>
-      <ul>
-        <li>{{ site.data.vita.dialects }}</li>
-      </ul>
-      <p class="head"><span></span>{{ site.data.vita.education_details.education_head }}</p>
-      <ul>
-        <li>{{ site.data.vita.education_details.education_date }}</li>
-        <li>{{ site.data.vita.education_details.education }}</li>
 
-      </ul> -->
     </div>
   </div>
 </div>

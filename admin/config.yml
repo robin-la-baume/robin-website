@@ -94,15 +94,23 @@ collections:
   - label: "Vita"
     name: "vita"
     folder: "_vita_details"
-    create: true
+    create: false
     slug: "{{head}}"
     fields:
-    - label: "Head"
-      name: "head"
-      widget: "string"
-    - label: "Data"
-      name: "data"
-      widget: "string"
+    - label: "Kategorie"
+      name: "category"
+      widget: "list"
+      required: false
+      fields:
+      - label: "Daten"
+        name: "datas"
+        widget: "list"
+      - label: "Beschreibung"
+        name: "title"
+        widget: "string"
+      - lable: "Daten"
+        name: "data"
+        widget: "markdown"
 
 # --------------- Audio --------------------
   - label: "Audio"
