@@ -26,9 +26,9 @@ title: Vita
 
     <div id="resume">
       {% for detail in site.vita_details %}
-        <p class="head"><span></span>{{ data.date_of_birth_head }}</p>
+        <p class="head"><span></span>{{ detail.date_of_birth_head }}</p>
         <ul>
-          <li>{{ data.date_of_birth }}</li>
+          <li>{{ detail.date_of_birth }}</li>
         </ul>
       {% endfor %}
       <!-- <p class="head"><span></span>{{ site.data.vita.date_of_birth_head }}</p>

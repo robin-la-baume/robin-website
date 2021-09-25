@@ -56,7 +56,6 @@ collections:
   - label: "Homepage"
     name: "home"
     folder: "_data/home.yml"
-    create: true
     fields:
       - label: "Instagram URL"
         name: "instagram_url"
