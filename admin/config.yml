@@ -86,7 +86,7 @@ collections:
   # --------------- Vita --------------------
   - label: "Vita"
     name: "vita"
-    folder: "_vita_details
+    folder: "_vita_details"
     create: true
     slug: "{{head}}"
     fields:
