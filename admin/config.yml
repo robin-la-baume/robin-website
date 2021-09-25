@@ -97,20 +97,17 @@ collections:
     create: false
     slug: "{{head}}"
     fields:
-    - label: "Kategorie"
+    - label: "Stammdaten"
       name: "category"
-      widget: "list"
-      required: false
+      file: "general.md"
       fields:
-      - label: "Daten"
-        name: "datas"
-        widget: "list"
-      - label: "Beschreibung"
-        name: "title"
+      - label: "Label"
+        name: "head"
         widget: "string"
-      - lable: "Daten"
+      - label: "Daten"
         name: "data"
-        widget: "markdown"
+        widget: "string"
+
 
 # --------------- Audio --------------------
   - label: "Audio"
