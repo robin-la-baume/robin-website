@@ -53,9 +53,9 @@ collections:
           widget: "string"
 
   # --------------- Homepage --------------------
-  - label: "Home Page"
+  - label: "Homepage"
     name: "home"
-    file: "index.html"
+    folder: "index.html"
     fields:
       - label: "Instagram URL"
         name: "instagram_url"
