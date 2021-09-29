@@ -3,7 +3,7 @@ head: Theater (Auswahl)
 data: >-
   * **2014 – 2019**
 
-  * **Festengagement Staatstheater Darmstadt**
+  * Festengagement Staatstheater Darmstadt
 
 
 
