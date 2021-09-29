@@ -4,11 +4,11 @@ data: >-
   
   * **2021**	 	
 
-  **Was ihr wollt** - Rolle: Olivia - Regie: Julia Prechsl - Theater Münster
+  * **Was ihr wollt** - Rolle: Olivia - Regie: Julia Prechsl - Theater Münster
 
   * **2020**	 	
 
-  **89/90** - Rolle: F - Regie: Julia Prechsl - Theater Münster
+  * **89/90** - Rolle: F - Regie: Julia Prechsl - Theater Münster
 
 
   * **2014 – 2019**
