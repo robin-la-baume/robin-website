@@ -1,11 +1,9 @@
 ---
 head: Theater (Auswahl)
 data: >-
-  **2014 – 2019**
+  * **2014 – 2019**
 
-
-  Festengagement Staatstheater Darmstadt
-
+  * **Festengagement Staatstheater Darmstadt**
 
   * Grounded - Am Boden  - Rolle: Pilotin - Regie: Richard Wagner
 
