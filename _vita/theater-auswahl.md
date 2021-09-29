@@ -15,9 +15,13 @@ data: >-
 
   * Festengagement Staatstheater Darmstadt
 
-  * **Grounded - Am Boden** - Rolle: Pilotin - Regie: Richard Wagner
+  * **Grounded - Am Boden**
 
-  * **Das weiße Band** - Rollen: Eva, Anna - Regie: Christoph Frick
+  Rolle: Pilotin - Regie: Richard Wagner
+
+  * **Das weiße Band**
+
+  Rollen: Eva, Anna - Regie: Christoph Frick
 
   * **Die Reise in 80 Tagen um die Erde** - Rolle: Auoda - Regie: Eike Hannemann
 
