@@ -25,10 +25,10 @@ title: Vita
     </div>
 
     <div id="resume">
-      {% for general_data in site.vita.general.general_datas %}
-        <p class="head"><span></span>{{ general_data.head }}</p>
+      {% for data in site.vita %}
+        <p class="head"><span></span>{{ data.head }}</p>
         <ul>
-          <li>{{ general_data.data }}</li>
+          <li>{{ data.data }}</li>
         </ul>
       {% endfor %}
 

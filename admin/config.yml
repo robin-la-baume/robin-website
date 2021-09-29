@@ -102,7 +102,7 @@ collections:
       widget: "string"
     - label: "Details"
       name: "data"
-      widget: "string"
+      widget: "markdown"
     
  
 
