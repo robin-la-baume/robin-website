@@ -11,7 +11,7 @@ data: >-
   * **89/90** - Rolle: F - Regie: Julia Prechsl - Theater Münster
 
 
-  * **2014 – 2019**\
+  * **2014 – 2019**<br>
 
   * Festengagement Staatstheater Darmstadt
 
