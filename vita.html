@@ -27,9 +27,7 @@ title: Vita
     <div id="resume">
       {% for data in site.vita %}
         <p class="head"><span></span>{{ data.head }}</p>
-        <ul>
-          <li>{{ data.data | markdownify }}</li>
-        </ul>
+          {{ data.data | markdownify }}
       {% endfor %}
 
     </div>

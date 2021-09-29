@@ -59,16 +59,19 @@
   margin: calc( var(--space-standard) * 1.05) 0 calc( var(--space-standard) * .5) 0;
   padding-bottom: calc( var(--space-standard) * 0.6);
   border-bottom: thin solid var(--markup-color);
-  cursor: pointer;
   letter-spacing: 0.05rem;
   transition: letter-spacing 0.2s;
+}
+
+#resume .head {
+  cursor: pointer;
 }
 
 #resume ul .open {
   transform: translateX(0);
 }
 
-#resume p:hover {
+#resume .head:hover {
   letter-spacing: 0.1rem;
 }
 
@@ -109,6 +112,7 @@
 #resume ul {
   letter-spacing: 0.05rem;
   display: none;
+  margin-left: 2.5rem;
 }
 
 @media screen and (max-width: 768px) {
