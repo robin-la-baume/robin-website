@@ -5,22 +5,22 @@ data: >-
 
   * **Was ihr wollt**
     Rolle: Olivia - Regie: Julia Prechsl - Theater Münster
+
   * **2020**	 	
 
   * **89/90**
     Rolle: F - Regie: Julia Prechsl - Theater Münster
-  * * *
 
   * **2014 – 2019**
 
-  * Festengagement Staatstheater Darmstadt
+  * **Festengagement Staatstheater Darmstadt**
 
-  * **Grounded - Am Boden**
-    Rolle: Pilotin - Regie: Richard Wagner
-  * **Das weiße Band**
-    Rollen: Eva, Anna - Regie: Christoph Frick
-  * **Die Reise in 80 Tagen um die Erde**
-    Rolle: Auoda - Regie: Eike Hannemann
+  * **Grounded - Am Boden** Rolle: Pilotin - Regie: Richard Wagner
+
+  * **Das weiße Band** Rollen: Eva, Anna - Regie: Christoph Frick
+
+  * **Die Reise in 80 Tagen um die Erde** Rolle: Auoda - Regie: Eike Hannemann
+
   * **Die rote Zora** - Rolle: Zora - Regie: Ulf Görke
 
   * **Caligula** - Rolle: Scipio - Regie: Christoph Mehler

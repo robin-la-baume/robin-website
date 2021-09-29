@@ -94,6 +94,10 @@ button {
   font-size: var(--font-size) !important;
 }
 
+strong {
+  font-weight: 600;
+}
+
 .content-container {
   display: grid;
   width: 100vw;
