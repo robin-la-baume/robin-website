@@ -1,7 +1,6 @@
 ---
 head: Theater (Auswahl)
 data: >-
-  
   * **2021**	 	
 
   * **Was ihr wollt** - Rolle: Olivia - Regie: Julia Prechsl - Theater Münster
@@ -16,8 +15,7 @@ data: >-
 
   * Festengagement Staatstheater Darmstadt
 
-
-  * **Grounded** - Am Boden  - Rolle: Pilotin - Regie: Richard Wagner
+  * **Grounded - Am Boden** - Rolle: Pilotin - Regie: Richard Wagner
 
   * **Das weiße Band** - Rollen: Eva, Anna - Regie: Christoph Frick
 
