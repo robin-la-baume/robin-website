@@ -1,4 +1,4 @@
 ---
 head: Geburtsjahr
-data: "2001"
+data: "* 2001"
 ---
