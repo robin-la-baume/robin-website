@@ -1,5 +1,6 @@
 #foto-container .headline-wrapper {
   background-image: none;
+  background-color: var(--background-color);
 }
 
 #foto-wrapper {
@@ -27,7 +28,7 @@
 }
 
 .popup-gallery:hover .gallery-item {
-  background-position: center;
+  // background-position: center;
   background-color: transparent;
   opacity: 1;
 }
@@ -48,7 +49,7 @@
   }
 
   .gallery-item, .popup-gallery:hover .gallery-item {
-    background-position: top;
+    // background-position: top;
     opacity: 1;
   }
 }

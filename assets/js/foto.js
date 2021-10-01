@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 	$(galleryTag).scroll(function(){
     let wScroll = $(this).scrollTop();
-		if(wScroll < galleryTagHeight-1) {
+		if(wScroll < galleryTagHeight - 1) {
 			$('footer').css('display', 'none')
 		} else {
 			$('footer').css('display', 'flex')
