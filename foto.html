@@ -8,15 +8,13 @@ title: Foto
   {% include navigation.html %}
 
   <div id="foto-wrapper">
-    {% for image in site.static_files %}
-      {% if image.path contains 'images/uploads' %}
+    {% for photo in site.photos %}
         <div class="popup-gallery">
-          <a href="{{ image.path | remove_first:'/' }}">
-            <div  class="gallery-item" style="background-image: url({{ image.path | remove_first:'/' }});">
+          <a href="{{ photo.file_path }}">
+            <div  class="gallery-item" style="background-image: url({{ photo.file_path }});">
             </div>
           </a>
         </div>
-      {% endif %}
     {% endfor %}
   </div>
 </div>

@@ -17,3 +17,5 @@ collections:
     output: true
   vita:
     output: true
+  fotos:
+    output: true

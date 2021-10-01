@@ -125,3 +125,21 @@ collections:
     - label: "Pfad-URL"
       name: "file_path"
       widget: "string"
+
+
+# --------------- Fotos --------------------
+  - label: "Foto"
+    name: "foto"
+    folder: "_fotos"
+    create: true
+    slug: "{{path_name}}"
+    fields:
+    - label: "Image"
+      name: "file_path"
+      widget: "image"
+    - label: "Name Fotograf"
+      name: "foto_by"
+      widget: "string"
+    - label: "Pfad"
+      name: "path_name"
+      widget: "string"
