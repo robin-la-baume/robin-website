@@ -3,7 +3,10 @@ backend:
   repo: robin-la-baume/robin-website # Path to your GitHub repository
   branch: main
 
+locale: 'de'
+
 media_folder: "assets/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   # --------------- Allgemein --------------------
