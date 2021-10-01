@@ -132,7 +132,7 @@ collections:
     name: "foto"
     folder: "_photos"
     create: true
-    slug: "{{path_name}}"
+    slug: "{{file_path}}"
     fields:
     - label: "Image"
       name: "file_path"
