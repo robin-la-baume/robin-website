@@ -126,6 +126,78 @@ ul {
   transition: all 0.2s;
 }
 
+@keyframes fadeInTopDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  50% {
+    transfrom: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeftRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  50% {
+    transfrom: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRightLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  50% {
+    transfrom: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.appear {
+  opacity: 0;
+  animation-name: fadeInRightLeft;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  /* makes sure the end state stays the same */
+  animation-fill-mode: forwards;
+}
+
+.appear:nth-child(1) {
+  opacity: 0;
+  animation-name: fadeInLeftRight;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  /* makes sure the end state stays the same */
+  animation-fill-mode: forwards;
+}
+
+.appear:nth-child(2) {
+  opacity: 0;
+  animation-name: fadeInTopDown;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  /* makes sure the end state stays the same */
+  animation-fill-mode: forwards;
+}
+
 @media screen and (max-width: 425px) {
 
 }

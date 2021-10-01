@@ -9,6 +9,7 @@
 @import "audio";
 @import "showreel";
 @import "vita";
+@import "background";
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
@@ -149,7 +150,7 @@ strong {
   position: sticky;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) !important;
   z-index: 998;
 }
 

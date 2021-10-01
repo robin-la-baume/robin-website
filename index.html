@@ -3,14 +3,14 @@ title: Yana Robin la Baume
 ---
 
 <div class="start-container effect">
-  <div id="title">
+  <div id="title" class="appear">
     <h1>
-      <span id="forename">{{ site.data.general.forename }}</span><br>
+      <span id="forename" >{{ site.data.general.forename }}</span><br>
       <span id="middlename">{{ site.data.general.middlename }}</span><br>
       <span id="surename">{{ site.data.general.surename }}</span>
     </h1>
   </div>
-  <div id="social">
+  <div id="social" class="appear">
     <a href="{{ site.data.social_media.instagram_url }}" target="_blank" id="instagram">
       <h2>IG</h2>
     </a>
@@ -19,10 +19,10 @@ title: Yana Robin la Baume
     </a>
   </div>
   {% include navigation.html %}
-  <div id="content-1">
+  <div id="content-1" class="appear">
     <h2>Aktuell</h2>
   </div>
-  <div id="content-2">
+  <div id="content-2" class="appear">
     <h2><span>Aktuell<br></span>{{ site.data.news.news_title }}<br>
       {{ site.data.news.news_subline_1 }}<br>
       {{ site.data.news.news_subline_2 }}<br>

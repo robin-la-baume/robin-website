@@ -3,7 +3,7 @@
 }
 
 #vita-content {
-  background: linear-gradient(180deg, var(--background-color), transparent);
+  // background: linear-gradient(180deg, var(--background-color), transparent);
   margin-bottom: calc( var(--space-standard) - .9);
   padding: var(--space-standard);
   padding-bottom: 0;
@@ -100,7 +100,8 @@
 }
 
 #resume p:hover span svg circle {
-  fill: var(--background-color) !important;
+  // fill: var(--background-color) !important;
+  fill: rgba($color: #000000, $alpha: 0) !important;
   stroke: var(--markup-color) !important;
   stroke-width: 0.1rem !important;
 }
