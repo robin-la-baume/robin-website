@@ -3,7 +3,7 @@ backend:
   repo: robin-la-baume/robin-website # Path to your GitHub repository
   branch: main
 
-locale: 'de'
+locale: 'en'
 
 media_folder: "/images/uploads"
 public_folder: "/images/uploads"
@@ -130,7 +130,7 @@ collections:
 # --------------- Fotos --------------------
   - label: "Foto"
     name: "foto"
-    folder: "_fotos"
+    folder: "_photos"
     create: true
     slug: "{{path_name}}"
     fields:
@@ -139,7 +139,4 @@ collections:
       widget: "image"
     - label: "Name Fotograf"
       name: "foto_by"
-      widget: "string"
-    - label: "Pfad"
-      name: "path_name"
       widget: "string"
