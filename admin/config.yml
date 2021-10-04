@@ -20,10 +20,7 @@ collections:
       - label: "Jahr"
         name: "year"
         widget: "date"
-        default: ""
-        format: 'YYYY'
         default_format: 'YYYY'
-        time_format: false
         picker_utc: true
       - label: "Vorname"
         name: "forename"
