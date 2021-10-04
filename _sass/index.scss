@@ -174,7 +174,7 @@ ul {
 .appear {
   opacity: 0;
   animation-name: fadeInRightLeft;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-delay: 1s;
   /* makes sure the end state stays the same */
   animation-fill-mode: forwards;
