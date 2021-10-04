@@ -5,32 +5,30 @@
 
 #foto-wrapper {
   grid-area: content;
-  display: inline-block;
+  display: flex;
   overflow-y: scroll;
+  flex-wrap: wrap;
 }
 
 #foto-wrapper span {
   display: none;
 }
 
-.popup-gallery {
-  width:100%;
-  height: 100%;
-  // float: left;
+#foto-wrapper a {
+  width: calc(100% / 3);
+  height: 50%;
 }
 
 .gallery-item {
-  background-position-x: 65%;
-  background-position-y: 0;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   transition: all 0.4s;
 }
 
-.popup-gallery:hover .gallery-item {
+.gallery-item:hover {
   // background-position: center;
   background-color: transparent;
   opacity: 1;
@@ -43,7 +41,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .popup-gallery {
     background-position-x: 0;
     opacity: 1 !important;
@@ -51,10 +48,9 @@
     height: 25%;
   }
 
-  .gallery-item, .popup-gallery:hover .gallery-item {
+  .gallery-item,
+  .popup-gallery:hover .gallery-item {
     // background-position: top;
     opacity: 1;
   }
 }
-
-
