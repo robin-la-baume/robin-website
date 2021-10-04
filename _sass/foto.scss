@@ -1,6 +1,6 @@
-#foto-container .headline-wrapper {
+#foto-container .headline-wrapper, #foto-container #sidebar {
   background-image: none;
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
 }
 
 #foto-wrapper {
@@ -35,6 +35,19 @@
   background-color: transparent;
   opacity: 1;
 }
+
+// .light {
+//   position: absolute;
+//   top: calc(50% - 20px);
+//   left: calc(50% - 20px);
+//   width: 0;
+//   height: 0;
+//   border-radius: 50%;
+//   background-color: transparent;
+//   box-shadow: 1px 0px 100px 100px rgba(255, 255, 255, .25);
+//   mix-blend-mode: soft-light;
+//   z-index: 997;
+// }
 
 @media screen and (max-width: 1600px) {
   #foto-wrapper a {

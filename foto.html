@@ -7,6 +7,7 @@ title: Foto
   {% include navigation.html %}
 
   <div id="foto-wrapper">
+    <!-- <div class="light"></div> -->
     <span>{{ photo.foto_by }}</span>
     {% for photo in site.photos %}
       <a title="<small>Foto: {{ photo.foto_by }}</small>" href="{{ photo.file_path }}">
