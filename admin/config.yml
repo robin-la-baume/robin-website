@@ -22,7 +22,7 @@ collections:
         widget: "date"
         default: ""
         date_format: 'YYYY'
-        picker_utc: false
+        picker_utc: true
       - label: "Vorname"
         name: "forename"
         widget: "string"
