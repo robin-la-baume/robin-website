@@ -120,8 +120,23 @@
   margin-bottom: 1rem;
 }
 
-#resume li h3{
-  margin-left: -2.5rem;
+#resume li h3 {
+  border-bottom: thin solid var(--markup-color);
+  padding-bottom: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  border-top: thin solid var(--markup-color);
+  padding-top: 1.25rem;
+}
+
+#resume li:first-child h3 {
+  border-top: none;
+  margin-top: 1.25rem;
+  padding-top: 0;
+}
+
+#resume li h4 {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
