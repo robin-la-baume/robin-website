@@ -2,64 +2,64 @@
 head: Theater (Auswahl)
 data: |-
   * ### **2021**
-  * #### **Theater Münster**
+  * #### Theater Münster
   * ***Was ihr wollt***\
     Rolle: Olivia\
     Regie: Julia Prechsl
-  * #### Test-**Theater**
+  * #### Test-Theater
   * ***Testtitel***\
     Rolle: Test\
     Regie: Test
   * ### **2020**
-  * #### **Theater Münster**
+  * #### Theater Münster
   * ***89/90***\
     Rolle: F\
     Regie: Julia Prechsl
   * ### **2014 – 2019**
-  * #### **Festengagement Staatstheater Darmstadt**
-  * ***Grounded - Am Boden*** \
+  * #### Festengagement Staatstheater Darmstadt
+  * **Grounded - Am Boden** \
     Rolle: Pilotin\
     Regie: Richard Wagner
-  * ***Das weiße Band*** \
+  * **Das weiße Band** \
     Rollen: Eva, Anna\
     Regie: Christoph Frick
-  * ***Die Reise in 80 Tagen um die Erde*** \
+  * **Die Reise in 80 Tagen um die Erde** \
     Rolle: Auoda\
     Regie: Eike Hannemann
-  * ***Die rote Zora***\
+  * **Die rote Zora**\
     Rolle: Zora \
     Regie: Ulf Görke
-  * ***Caligula***\
+  * **Caligula**\
     Rolle: Scipio\
     Regie: Christoph Mehler
-  * ***Faust***\
+  * **Faust**\
     Rollen: Hexe, Marthe\
     Regie: Bettina Bruinier
-  * ***Auerhaus***\
+  * **Auerhaus**\
     Rolle: Vera\
     Regie: Nike Steinbach
-  * ***Orestie***\
+  * **Orestie**\
     Rolle: Elektra\
     Regie: Gustav Rueb
-  * ***Orlando***\
+  * **Orlando**\
     Rolle: Sasha\
     Regie: Lily Sykes
-  * ***Invasion***\
+  * **Invasion**\
     Rolle: C\
     Regie: Michael Götz
-  * ***Peterchens Mondfahrt***\
+  * **Peterchens Mondfahrt**\
     Rolle: Anne\
     Regie: Michael Götz
-  * ***Geld und Gott***\
+  * **Geld und Gott**\
     Rolle: Josefine\
     Regie: Steffen Klewer
-  * ***Das Tierreich***\
+  * **Das Tierreich**\
     Rollen: diverse\
     Regie: Laura Linnebaum
-  * ***Penthesilea***\
+  * **Penthesilea**\
     Rolle: Meroe\
     Regie: Simone Blattner
-  * ***Paradies -Spiel mir das Lied vom Anfang***\
+  * **Paradies -Spiel mir das Lied vom Anfang**\
     Rolle: Eva\
     Regie: Maria Ursprung
 ---
