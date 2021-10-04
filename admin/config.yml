@@ -20,8 +20,7 @@ collections:
       - label: "Jahr"
         name: "year"
         widget: "date"
-        default_format: 'YYYY'
-        picker_utc: true
+        format: 'YYYY'
       - label: "Vorname"
         name: "forename"
         widget: "string"
