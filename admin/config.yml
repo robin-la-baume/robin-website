@@ -19,8 +19,8 @@ collections:
       fields:
       - label: "Jahr"
         name: "year"
-        widget: "date"
-        format: 'YYYY'
+        widget: "string"
+        hint: "current year"
       - label: "Vorname"
         name: "forename"
         widget: "string"
