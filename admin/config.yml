@@ -21,7 +21,9 @@ collections:
         name: "year"
         widget: "date"
         default: ""
-        date_format: 'YYYY'
+        format: 'YYYY'
+        default_format: 'YYYY'
+        time_format: false
         picker_utc: true
       - label: "Vorname"
         name: "forename"
