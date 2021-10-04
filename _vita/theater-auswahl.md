@@ -3,16 +3,16 @@ head: Theater (Auswahl)
 data: |-
   * ### **2021**
   * #### Theater Münster
-  * ***Was ihr wollt***\
+  * **Was ihr wollt**\
     Rolle: Olivia\
     Regie: Julia Prechsl
   * #### Test-Theater
-  * ***Testtitel***\
+  * **Testtitel**\
     Rolle: Test\
     Regie: Test
   * ### **2020**
   * #### Theater Münster
-  * ***89/90***\
+  * **89/90**\
     Rolle: F\
     Regie: Julia Prechsl
   * ### **2014 – 2019**
