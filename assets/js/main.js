@@ -15,6 +15,12 @@ $(document).ready(function () {
 
 	// 	$el.ripples('drop', x, y, dropRadius, strength);
 	// }, 400);
+	$(document).on('mousemove', function(e){
+    $('.light').css({
+       left:  e.pageX,
+       top:   e.pageY
+    });
+  });
 
 });
 

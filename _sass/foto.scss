@@ -7,13 +7,16 @@
   grid-area: content;
   display: inline-block;
   overflow-y: scroll;
+}
 
+#foto-wrapper span {
+  display: none;
 }
 
 .popup-gallery {
-  width: calc(100% / 3);
-  height: 50%;
-  float: left;
+  width:100%;
+  height: 100%;
+  // float: left;
 }
 
 .gallery-item {

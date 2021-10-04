@@ -188,7 +188,7 @@ footer h3 {
   position: fixed;
   right: 0;
   top: var(--space-standard);
-  z-index: 999;
+  z-index: 998;
 }
 
 #top-line,
@@ -246,4 +246,17 @@ footer h3 {
   #sidebar {
     display: none;
   }
+}
+
+.light {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 1px 0px 150px 150px #fff;
+  // z-index: 999;
+  mix-blend-mode: soft-light;
 }

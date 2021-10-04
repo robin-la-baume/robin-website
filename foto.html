@@ -3,18 +3,15 @@ title: Foto
 ---
 
 <div class="content-container effect" id="foto-container">
-  <!-- {% include background.html %} -->
   {% include headline.html %}
   {% include navigation.html %}
 
   <div id="foto-wrapper">
+    <span>{{ photo.foto_by }}</span>
     {% for photo in site.photos %}
-        <div class="popup-gallery">
-          <a href="{{ photo.file_path }}">
-            <div  class="gallery-item" style="background-image: url({{ photo.file_path }});">
-            </div>
-          </a>
-        </div>
-    {% endfor %}
+      <a href="{{ photo.file_path }}">
+        <div  class="gallery-item" style="background-image: url({{ photo.file_path }});"></div>
+      </a>
+    {% endfor %}    
   </div>
 </div>
