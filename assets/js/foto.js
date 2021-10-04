@@ -1,15 +1,5 @@
-
-const fotoByTag = document.querySelectorAll('#foto-wrapper span');
-
-
-let fotoByName = new Array();
-
 $(document).ready(function () {
 	// jQuery code goes here
-	
-	for (let i = 0; i < fotoByTag.length; i++) {
-		fotoByName.push(fotoByTag[i].innerHTML);
-	};
 
 		$('#foto-wrapper').magnificPopup({
 			delegate: 'a',
@@ -25,7 +15,8 @@ $(document).ready(function () {
 				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 				titleSrc: function (item) {
 					// return item.el.attr('title') + '<small>Foto: Marsel Van Oosten</small>';
-					return `<small>Foto: test</small>`;
+					return item.el.attr('title');
+					// return `<small>Foto: test</small>`;
 				}
 			},
 			callbacks: {
@@ -34,7 +25,5 @@ $(document).ready(function () {
 				}
 			}
 		});
-
-
 });
 

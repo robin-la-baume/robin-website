@@ -9,8 +9,8 @@ title: Foto
   <div id="foto-wrapper">
     <span>{{ photo.foto_by }}</span>
     {% for photo in site.photos %}
-      <a href="{{ photo.file_path }}">
-        <div  class="gallery-item" style="background-image: url({{ photo.file_path }});"></div>
+      <a title="<small>Foto: {{ photo.foto_by }}</small>" href="{{ photo.file_path }}">
+        <div class="gallery-item" style="background-image: url({{ photo.file_path }});"></div>
       </a>
     {% endfor %}    
   </div>
