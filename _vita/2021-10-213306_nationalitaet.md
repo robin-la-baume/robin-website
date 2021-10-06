@@ -1,4 +1,4 @@
 ---
 head: Nationalität
-data: D
+data: "* D"
 ---
