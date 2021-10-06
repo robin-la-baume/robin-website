@@ -175,7 +175,7 @@ ul {
   opacity: 0;
   animation-name: fadeInRightLeft;
   animation-duration: 2s;
-  animation-delay: 1s;
+  animation-delay: .5s;
   /* makes sure the end state stays the same */
   animation-fill-mode: forwards;
 }
@@ -183,8 +183,8 @@ ul {
 .appear:nth-child(1) {
   opacity: 0;
   animation-name: fadeInLeftRight;
-  animation-duration: 3s;
-  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-delay: .5s;
   /* makes sure the end state stays the same */
   animation-fill-mode: forwards;
 }
@@ -192,8 +192,8 @@ ul {
 .appear:nth-child(2) {
   opacity: 0;
   animation-name: fadeInTopDown;
-  animation-duration: 3s;
-  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-delay: .5s;
   /* makes sure the end state stays the same */
   animation-fill-mode: forwards;
 }
