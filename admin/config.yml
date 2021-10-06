@@ -104,15 +104,14 @@ collections:
     - label: "Details"
       name: "data"
       widget: "markdown"
-    
- 
+
 
 # --------------- Audio --------------------
   - label: "Audio"
     name: "audio"
     folder: "_audios"
     create: true
-    slug: "{{path_name}}"
+    slug: "{{Minute}}_{{second}}_{{slug}}"
     fields:
     - label: "Titel"
       name: "title"
@@ -130,7 +129,7 @@ collections:
     name: "foto"
     folder: "_photos"
     create: true
-    slug: "{{file_path}}"
+    slug: "{{Minute}}_{{second}}_{{slug}}"
     fields:
     - label: "Image"
       name: "file_path"
