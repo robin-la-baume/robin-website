@@ -96,7 +96,7 @@ collections:
     name: "vita"
     folder: "_vita"
     create: true
-    slug: "{{year}}-{{month}}-{{hour}}{{minute}}{{second}}_{{head.slug}}"
+    slug: "{{year}}-{{month}}-{{hour}}{{minute}}{{second}}_{{head}}"
     fields:
     - label: "Label"
       name: "head"
