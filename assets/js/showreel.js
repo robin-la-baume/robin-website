@@ -5,7 +5,7 @@ const muteBtn = document.getElementById("mute-btn");
 function pauseVideo() {
   if (video.paused) {
     video.play();
-    pausebBtn.innerHTML = "Pause";
+    pauseBtn.innerHTML = "Pause";
   } else {
     video.pause();
     pauseBtn.innerHTML = "Play";

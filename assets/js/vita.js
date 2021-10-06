@@ -56,9 +56,13 @@ for (let i = 0; i < vitaAccordion.length; i++) {
 
   $(document).ready(function () {
     $(vitaAccordion[i]).click(function () {
-      $(vitaContent[i]).slideToggle("fast", "linear");
+      if (window.innerWidth <= 768) {
+        $(vitaContent[i]).toggle();
+      } else {
+        $(vitaContent[i]).slideToggle("fast", "linear");
+      }
       $(vitaContent[i]).toggleClass("open");
-      if($(vitaContent[i]).hasClass("open")) {
+      if ($(vitaContent[i]).hasClass("open")) {
         $(vitaToggle[i]).css("transform", "rotate(45deg)")
       } else {
         $(vitaToggle[i]).css("transform", "rotate(0deg)")
