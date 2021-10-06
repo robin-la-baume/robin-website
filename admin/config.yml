@@ -96,7 +96,7 @@ collections:
     name: "vita"
     folder: "_vita"
     create: true
-    slug: "{{head}}"
+    slug: "{{year}}-{{month}}-{{hour}}{{minute}}{{second}}_{{head}}"
     fields:
     - label: "Label"
       name: "head"
@@ -111,7 +111,7 @@ collections:
     name: "audio"
     folder: "_audios"
     create: true
-    slug: "{{Minute}}_{{second}}_{{slug}}"
+    slug: "{{path_name}}"
     fields:
     - label: "Titel"
       name: "title"
@@ -129,7 +129,7 @@ collections:
     name: "foto"
     folder: "_photos"
     create: true
-    slug: "{{Minute}}_{{second}}_{{slug}}"
+    slug: "{{file_path}}"
     fields:
     - label: "Image"
       name: "file_path"
