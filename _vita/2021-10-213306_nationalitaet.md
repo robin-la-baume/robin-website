@@ -1,4 +1,0 @@
----
-head: Nationalität
-data: "* D"
----
