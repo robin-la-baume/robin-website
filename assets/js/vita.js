@@ -45,30 +45,34 @@ window.onload = function () {
   }
 }
 
-const vitaAccordion = document.querySelectorAll("#resume p");
-const vitaContent = document.querySelectorAll("#resume ul");
-const vitaToggle = document.querySelectorAll("#resume p span");
-const t = document.querySelector('template');
+function toggleVita() {
 
-for (let i = 0; i < vitaAccordion.length; i++) {
-  const clone = document.importNode(t.content, true);
-  vitaToggle[i].appendChild(clone);
+  const vitaAccordion = document.querySelectorAll("#resume p");
+  const vitaContent = document.querySelectorAll("#resume ul");
+  const vitaToggle = document.querySelectorAll("#resume p span");
+  const t = document.querySelector('template');
 
-  $(document).ready(function () {
-    $(vitaAccordion[i]).click(function () {
-      if (window.innerWidth <= 768) {
-        $(vitaContent[i]).toggle();
-      } else {
-        $(vitaContent[i]).slideToggle("fast", "linear");
-      }
-      $(vitaContent[i]).toggleClass("open");
-      if ($(vitaContent[i]).hasClass("open")) {
-        $(vitaToggle[i]).css("transform", "rotate(45deg)")
-      } else {
-        $(vitaToggle[i]).css("transform", "rotate(0deg)")
-      }
-    });
-  })
+  for (let i = 0; i < vitaAccordion.length - 1; i++) {
+    const clone = document.importNode(t.content, true);
+    vitaToggle[i].appendChild(clone);
+
+    $(document).ready(function () {
+      $(vitaAccordion[i]).click(function () {
+        if (window.innerWidth <= 768) {
+          $(vitaContent[i]).toggle();
+        } else {
+          $(vitaContent[i]).slideToggle("fast", "linear");
+        }
+        $(vitaContent[i]).toggleClass("open");
+        if ($(vitaContent[i]).hasClass("open")) {
+          $(vitaToggle[i]).css("transform", "rotate(45deg)")
+        } else {
+          $(vitaToggle[i]).css("transform", "rotate(0deg)")
+        }
+      });
+    })
+  }
+
 }
 
-console.log(vitaToggle);
+toggleVita();
