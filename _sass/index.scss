@@ -133,7 +133,7 @@ ul {
   }
 
   50% {
-    transfrom: translateY(0);
+    transform: translateY(0);
   }
 
   100% {
@@ -148,7 +148,7 @@ ul {
   }
 
   50% {
-    transfrom: translateX(0);
+    transform: translateX(0);
   }
 
   100% {
@@ -163,7 +163,7 @@ ul {
   }
 
   50% {
-    transfrom: translateX(0);
+    transform: translateX(0);
   }
 
   100% {
@@ -260,6 +260,11 @@ ul {
     transition: all 0.2s;
     letter-spacing: 0.05rem;
   }
+
+  // .appear {
+  //   animation-name: none;
+  //   transform: translateX(0);
+  // }
 }
 
 @media screen and (orientation : landscape) and (max-width: 768px){
