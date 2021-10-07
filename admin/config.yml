@@ -137,3 +137,19 @@ collections:
     - label: "Name Fotograf"
       name: "foto_by"
       widget: "string"
+
+#----------------- Showreel -----------------
+
+  - label: "Showreel"
+    name: "showreel"
+    files:
+    - label: "Showreel"
+      name: "showreel"
+      file: "showreel.html"
+      fields:
+        - label: "Showreel-Link"
+          name: "showreel"
+          widget: "string"
+        - label: "Showreel-Poster"
+          name: "showreel_poster"
+          widget: "image"

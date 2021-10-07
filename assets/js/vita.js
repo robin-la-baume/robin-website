@@ -52,7 +52,7 @@ function toggleVita() {
   const vitaToggle = document.querySelectorAll("#resume p span");
   const t = document.querySelector('template');
 
-  for (let i = 0; i < vitaAccordion.length - 1; i++) {
+  for (let i = 0; i < vitaAccordion.length; i++) {
     const clone = document.importNode(t.content, true);
     vitaToggle[i].appendChild(clone);
 

@@ -14,6 +14,10 @@
   z-index: -1;
 }
 
+#myMobileVideo {
+  display: none;
+}
+
 
 #showreel-content {
   position: absolute;
@@ -44,14 +48,33 @@
   color: var(--markup-color);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
+  #full-video .headline-wrapper {
+    background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) !important;
+  }
+
   #showreel-content {
-
-    padding: 0 var(--space-standard) 0 0;
+    position: relative;
+    padding: 0;
+    height: 100%;
+    display: flex;
   }
 
-  .showreel-controls { 
-    border-radius: 9vw;
-    margin: 0 0 var(--space-standard) var(--space-standard);
+  #myVideo {
+    display: none;
   }
+
+  #myMobileVideo {
+    display: block;
+    width: 100%;
+  }
+
+  .showreel-controls {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  
+
 }

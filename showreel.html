@@ -1,10 +1,12 @@
 ---
 title: Showreel
+showreel: https://dl.dropboxusercontent.com/s/qovvluix8f86ykv/showreel.mp4?dl=0
+showreel_poster: images/uploads/showreel_poster.webp
 ---
 
 <div class="content-container effect" id="full-video">
   <video class="background-video" autoplay muted loop id="myVideo">
-    <source src="https://dl.dropboxusercontent.com/s/qovvluix8f86ykv/showreel.mp4?dl=0" type="video/mp4">
+    <source src="{{ page.showreel }}" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
 
@@ -13,6 +15,10 @@ title: Showreel
 
   <div id="showreel-wrapper">
     <div id="showreel-content">
+      <video id="myMobileVideo" controls controlsList="nodownload" poster="{{ page.showreel_poster }}">
+        <source src="{{ page.showreel }}" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
       <button class="showreel-controls" id="pause-btn" onclick="pauseVideo()">Pause</button>
       <button class="showreel-controls" id="mute-btn" onclick="muteVideo()">Sound on</button>
     </div>
