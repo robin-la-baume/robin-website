@@ -1,4 +1,4 @@
 ---
-file_path: /images/uploads/20200516_YRLB--4-1920w.webp
-foto_by: Dirk Möller
+file_path: /images/uploads/robin-pur-1-von-1-.webp
+foto_by: Jörg Kremer
 ---
