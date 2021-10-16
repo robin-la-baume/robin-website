@@ -1,19 +1,19 @@
 ---
 head: Film/Fernsehen/Werbung
 data: |-
-  ### 2021	 	
+  ### 2021
 
   #### Theater Münster
 
   * Was ihr wollt - Rolle: Olivia - Regie: Julia Prechsl
 
-  ### 2020	 	
+  ### 2020
 
   #### Theater Münster
 
   * 89/90 - Rolle: F - Regie: Julia Prechsl
 
-  ### 2014-2019	 	
+  ### 2014-2019
 
   #### Festengagement Staatstheater Darmstadt
 
@@ -26,7 +26,7 @@ data: |-
   Regie: Christoph Frick
 
   Die Reise in 80 Tagen um die Erde\
-  Rolle: Auoda\
+  Rolle: Aouda\
   Regie: Eike Hannemann
 
   Die rote Zora\
