@@ -1,4 +1,4 @@
 ---
-file_path: /images/uploads/Yana+Robin+La+Baume_web-9-1920w.webp
-foto_by: Platzhalter
+file_path: /images/uploads/dsc03825.webp
+foto_by: Sebastian N.
 ---
