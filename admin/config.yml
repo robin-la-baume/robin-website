@@ -129,7 +129,7 @@ collections:
     name: "foto"
     folder: "_photos"
     create: true
-    slug: "{{file_path}}"
+    slug: "{{year}}-{{month}}-{{hour}}{{minute}}{{second}}_{{file_path}}"
     fields:
     - label: "Image"
       name: "file_path"
