@@ -5,7 +5,7 @@ title: Yana Robin la Baume
 <div class="start-container effect">
   <div id="title" class="appear">
     <h1>
-      <span id="forename" >{{ site.data.general.forename }}</span><br>
+      <span id="forename">{{ site.data.general.forename }}</span><br>
       <span id="middlename">{{ site.data.general.middlename }}</span><br>
       <span id="surename">{{ site.data.general.surename }}</span>
     </h1>
@@ -14,7 +14,7 @@ title: Yana Robin la Baume
     <a href="{{ site.data.social_media.instagram_url }}" target="_blank" id="instagram">
       <h2>IG</h2>
     </a>
-    <a href="{{ site.data.social_media.theapolis_url }}"" target="_blank" id="theapolis">
+    <a href="{{ site.data.social_media.theapolis_url }}"" target=" _blank" id="theapolis">
       <h2>TP</h2>
     </a>
   </div>
@@ -23,13 +23,21 @@ title: Yana Robin la Baume
     <h2>Aktuell</h2>
   </div>
   <div id="content-2" class="appear">
-    <h2><span>Aktuell<br></span>{{ site.data.news.news_title }}<br>
-      {{ site.data.news.news_subline_1 }}<br>
+    <h2><span>Aktuell<br></span> {{ site.data.news.role }} in<br> {{ site.data.news.news_title }}<br>
       {{ site.data.news.news_subline_2 }}<br>
+      {{ site.data.news.news_subline_1 }}<br>
       → {{ site.data.news.news_date }}
     </h2>
-    <h3><a href="{{ site.data.news.news_url }}" target="_blank">↳ Weitere Infos</a></h3>
+    <h3><a href="{{ site.data.news.news_url }}" target="_blank">↳ Weitere Infos & Termine</a></h3>
     <div class="underline"></div>
   </div>
 </div>
-<!-- <div class="light"></div> -->
+<div id="bw_cookie">
+  <div class="row">
+    <div class="col-xs-12">
+      <p>🍪 Diese Seite verwendet Cookies.</p>
+      <button title="Der Benutzung von Cookie zustimmen und Benachrichtigung schließen.">OK</button>
+    </div>
+  </div>
+</div>
+    <!-- <div class="light"></div> -->
