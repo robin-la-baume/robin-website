@@ -208,9 +208,14 @@ footer h3 {
   margin-bottom: calc(var(--space-standard) * 0.45);
 }
 
+.active {
+  display: block !important;
+}
+
 #bw_cookie {
   // -webkit-text-size-adjust: 100%;
   // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: none;
   font-size: 16px;
   line-height: 1.7em;
   // background: black;
