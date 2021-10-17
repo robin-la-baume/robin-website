@@ -1,15 +1,19 @@
-const cookieContainer = document.getElementById('bw_cookie');
-const cookieButton = document.querySelector('#bw_cookie button');
-
-cookieButton.addEventListener('click', () => {
-  cookieContainer.classList.remove('active');
-  localStorage.setItem('cookieBannerDisplayed', true);
-});
-
-
-
-setTimeout(() => {
-  if (!localStorage.getItem('cookieBannerDisplayed')) {
-    cookieContainer.classList.add('active');
-  }
-}, 2000);
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+      "palette": {
+          "popup": {
+              "background": "rgba(0, 0, 0, 0)",
+              "text": "#fffff"
+          },
+          "button": {
+              "background": "rgba(0, 0, 0, 0)"
+          }
+      },
+      "theme": "edgeless",
+      "content": {
+          "message": "🍪 Diese Seite verwendet Cookies.",
+          "dismiss": "OK",
+          "link": "",
+          "href": "imprint.html"
+      }
+  })});
