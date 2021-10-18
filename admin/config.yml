@@ -70,6 +70,9 @@ collections:
       name: "news"
       file: "_data/news.yml"
       fields:
+      - label: "Rolle"
+        name: "role"
+        widget: "string"
       - label: "News Title"
         name: "news_title"
         widget: "string"
