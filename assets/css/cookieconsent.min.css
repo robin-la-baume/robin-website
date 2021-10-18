@@ -265,6 +265,9 @@
 }
 .cc-theme-edgeless.cc-window {
   padding: 0;
+  border: 1px solid white;
+  border-radius: 50px;
+  flex-direction: row;
 }
 .cc-floating.cc-theme-edgeless .cc-message {
   margin: 2em 2em 1.5em;
