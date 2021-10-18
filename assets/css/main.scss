@@ -180,6 +180,12 @@ footer {
   background-color: var(--background-color);
 }
 
+footer a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 footer h3 {
   margin: 0;
   padding-left: var(--space-standard);
