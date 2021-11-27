@@ -1,6 +1,10 @@
 ---
 head: Theater (Auswahl)
 data: |-
+  * ### 2022
+  * Apokalypse Baby\
+    Rolle: Lucie\
+    Regie: Tobias Dömer
   * ### 2021
   * #### Theater Münster
   * Was ihr wollt\
