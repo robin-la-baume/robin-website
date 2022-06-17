@@ -1,4 +1,4 @@
 ---
 file_path: /images/uploads/01.webp
-foto_by: Jan Stapelfeldt
+foto_by: Dirk Möller
 ---
