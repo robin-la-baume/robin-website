@@ -2,6 +2,10 @@
 head: Theater (Auswahl)
 data: |-
   * ### 2022
+  * #### Theater Heidelberg
+  * Maria Magda\
+    Rolle: Magda\
+    Regie: Brit Bartkowiak
   * #### Theater Münster
   * Apokalypse Baby\
     Rolle: Lucie\
