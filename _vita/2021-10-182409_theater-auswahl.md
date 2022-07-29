@@ -3,6 +3,9 @@ head: Theater (Auswahl)
 data: |-
   * ### 2022
   * #### Theater Heidelberg
+  * Das Labyrinth (The Monster in the Maze)\
+    Rolle: König Minos\
+    Regie: Victoria Stevens
   * Maria Magda\
     Rolle: Magda\
     Regie: Brit Bartkowiak
