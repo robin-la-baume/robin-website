@@ -17,6 +17,17 @@
     "nav content-1 content-2";
 }
 
+span#photo-credit
+{
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background: none !important;
+  text-align: right;
+  width: 100%;
+  letter-spacing: .025rem;
+}
+
 ul {
   margin: 0;
   padding: 0;
